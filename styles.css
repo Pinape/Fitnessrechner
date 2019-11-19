@@ -152,6 +152,7 @@ select {
 #berechnen:hover {
     background-color: #b0cae7;
     color: rgb(21, 58, 99);
+    cursor: pointer;
 }
 
 #zuruecksetzen {
@@ -167,6 +168,7 @@ select {
 #zuruecksetzen:hover {
     background-color: #e4e4e4;
     color: #656565;
+    cursor: pointer;
 }
 
 #buttons {
@@ -217,5 +219,12 @@ button {
     #berechnen,
     #zuruecksetzen {
         font-size: 80%;  
+    }
+}
+
+
+@media only screen and (min-width: 786px) {
+    #buttons {
+        margin: 3%;  
     }
 }
