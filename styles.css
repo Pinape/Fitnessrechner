@@ -44,7 +44,7 @@ label {
     background-color: rgb(238, 238, 238);
     border: 0 solid darkgrey;
     border-radius: 10px;
-    padding: 2% 0 3% 0;
+    padding: 2% 0 2% 0;
     text-align: center;
     box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.15);
 }
@@ -103,7 +103,7 @@ input {
 }
 
 select {
-    -webkit-writing-mode: horizontal-tb !important;
+    -webkit-writing-mode-: horizontal-tb !important;
     text-rendering: auto;
     color: black;
     letter-spacing: normal;
@@ -147,6 +147,8 @@ select {
     background-color: #104B88;
     padding: 2% 5%;
     text-align: center;
+    margin-top: 4%;
+    margin-left: 5%;
 }
 
 #berechnen:hover {
@@ -161,7 +163,7 @@ select {
     color: white;
     background-color: #adadad;
     padding: 2% 5%;
-    margin-left: 5%;
+    margin-top: 4%;
     text-align: center;
 }
 

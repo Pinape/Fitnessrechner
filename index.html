@@ -30,13 +30,13 @@
 
             <div id="angaben">
                 <p>Alter</p>
-                <input type="number" name="vorname" id="alter" maxlength="30">
+                <input type="number" name="alter" id="alter" min="0" max="100" maxlength="3">
 
                 <p>Größe in cm</p>
-                <input type="number" name="groesse" id="groesse" maxlength="40">
+                <input type="number" name="groesse" id="groesse" min="0" max="250" maxlength="3">
 
                 <p>Gewicht in Kilo</p>
-                <input type="number" name="gewicht" id="gewicht" maxlength="40">
+                <input type="number" name="gewicht" id="gewicht" min="20" max="400" maxlength="3">
             </div>
 
             <div id="aktivitaet">
@@ -61,8 +61,8 @@
 
         
             <div id="buttons">
-                <button id="berechnen" type="submit">Berechnen</button>
                 <button id="zuruecksetzen" type="reset">Eingaben zurücksetzen</button>
+                <button id="berechnen" type="submit">Berechnen</button>
             </div>
 
 
