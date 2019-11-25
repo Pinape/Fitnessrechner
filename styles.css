@@ -32,6 +32,62 @@ p {
     letter-spacing: 2px;
 }
 
+a {
+    text-decoration: none;
+    color:#313131;
+}
+
+/* ------- Navigation ------*/
+.navigation {
+    position: absolute;
+    width: 5%;
+    margin: 2% 4%;
+}
+
+@media only screen and (max-width: 600px) {
+    .navigation {
+        position: absolute;
+        float: left;
+    }
+}
+
+.calories {
+    padding: 10%;
+    background-color: #edad8c80;
+    border-radius: 50%;
+}
+
+.calories:hover{
+    background-color: #edac8cc0;
+    box-shadow: 5px 1px 200px #edac8cc0;
+}
+
+
+.drops {
+    padding: 13%;
+    background-color: #7eabd878;
+    border-radius: 50%;
+}
+
+.drops:hover {
+    background-color: #7eabd8be;
+    box-shadow: 5px 1px 200px #7eabd8be;
+}
+
+
+.home {
+    padding: 13%;
+    background-color: rgba(185, 185, 185, 0.418);
+    border-radius: 50%;
+}
+
+.home:hover {
+    background-color: rgba(185, 185, 185, 0.418);
+    box-shadow: 5px 1px 200px rgba(197, 197, 197, 0.726);
+}
+
+/* ------- FITNESSRECHNER ------*/
+
 label {
     font-weight: 100;
 }
@@ -192,6 +248,8 @@ button {
     font-weight: 500;
 }
 
+/* ------- Media Queries für Fitnessrechner ------*/
+
 @media only screen and (max-width: 786px) {
     #formular { 
         width: 80%;  
@@ -235,5 +293,94 @@ button {
 @media only screen and (min-width: 786px) {
     #buttons {
         margin: 3%;  
+    }
+}
+
+/* ------- HOME ------*/
+
+#homeheader{
+    margin-top: 8%;
+}
+
+.rechnerauswahl{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* .kalorienrechner */
+.kalorienrechnerLink:hover{
+    transform: scale(0.9);
+}
+
+.kalorienrechner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-left: 230px;
+}
+
+.icon1 {
+    padding: 10%;
+    background-color: #edad8c80;
+    border-radius: 50%;
+}
+
+.icon1:hover{
+    background-color: #edac8cc0;
+    box-shadow: 5px 1px 200px #edac8cc0;
+}
+
+.kalorienberechnen {
+    padding: 5%;
+    margin-top: 10%;
+    align-items: center;
+    line-height: 140%;
+}
+
+/* .wasserrechner */
+
+.wasserrechner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-right: 230px;
+}
+
+.icon2 {
+    padding: 13%;
+    background-color: #7eabd878;
+    border-radius: 50%;
+}
+
+.icon2:hover {
+    background-color: #7eabd8be;
+    box-shadow: 5px 1px 200px #7eabd8be;
+}
+
+.wasserberechnen{
+    padding: 5%;
+    margin-top: 15%;
+    align-items: center;
+    line-height: 140%;
+}
+
+/*---- Media Queries Home -----*/
+
+@media only screen and (max-width: 475px) {
+    .rechnerauswahl {
+        flex-direction: column;  
+    }
+
+    .kalorienrechner{
+        margin: 0;
+    }
+
+    .wasserrechner {
+        margin-top: 5%;
     }
 }

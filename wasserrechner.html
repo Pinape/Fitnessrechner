@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Wasserrechner</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+    <meta name="description" content="Studienarbeit im Fach Web Engineering">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="navigation">
+        <a class="homeIcon"href="index.html" alt="Home-Link">
+            <img class="home" src="icons/home.svg" alt="Home-Link">
+        </a>
+        
+        <a class="homeIcon" href="kalorienrechner.html" alt="Kalorienrechner-Link">
+            <img class="calories" src="icons/calories.svg" alt="Kalorienrechner">
+        </a>
+    </div>
+
+
+    <div id="header">
+        <h1>Checke deinen Wasserbedarf</h1>
+        <h2>- Wasserbedarfsrechner -</h2>
+        <p>Berechne deinen Wasserbedarf pro Tag!</p>
+    </div>
+    <div>
+
+        <form id="formular">
+            <div id="angaben">
+                <p>Alter</p>
+                <input type="number" name="alter" id="alter" min="0" max="100" maxlength="3">
+
+                <p>Gewicht in Kilo</p>
+                <input type="number" name="gewicht" id="gewicht" min="20" max="400" maxlength="3">
+            </div>
+
+
+            <div id="buttons">
+                <button id="zuruecksetzen" type="reset">Eingaben zurücksetzen</button>
+                <button id="berechnen" type="submit">Berechnen</button>
+            </div>
+
+            <div id="angaben">
+                <p>Ergebnis</p>
+                <input type="number" name="ergebnis" id="ergebnis" min="0" max="1000" maxlength="5">
+            </div>
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>
