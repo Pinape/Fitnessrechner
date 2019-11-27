@@ -1,0 +1,33 @@
+{
+  "name": "calorie-calculator",
+  "version": "1.0.0",
+  "description": "Realisierung eines Fitnessrechners als Web-Projekt URL: http://git.lisa-okezie.de/",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "tdd": "jest --watch",
+    "start": "ws"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "jsdom": "^15.2.1",
+    "local-web-server": "^3.0.7"
+  },
+  "jest": {
+    "setupFiles": [
+      "./testHelpers/itWill.js",
+      "./testHelpers/initDom.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pinape/Fitnessrechner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Pinape/Fitnessrechner/issues"
+  },
+  "homepage": "https://github.com/Pinape/Fitnessrechner#readme"
+}
