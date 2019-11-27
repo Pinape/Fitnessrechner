@@ -2,14 +2,17 @@
 
     // let weight = document.getElementById("weight")
 
-    const weight = 85
-    const size = 180
-    const age = 35
+    // const valueError = new Error("invalid values")
 
     module.exports={
         harris: (weight, size, age) => {
+            if (!weight || !size) {
+                throw new Error ("valueError")
+            }
+            else {
             const formula = Math.round(66.47 + (13.7 * weight) + (5 * size) - (6.8 * age))
             return formula
+            }
         }
         }
 
