@@ -37,32 +37,31 @@
            <div id="geschlecht">
                <p>Geschlecht</p>
                <fieldset id="geschlechterauswahl">
-                   <input type="radio" id="m" name="Geschlecht" value="Männlich">
+                   <input type="radio" id="m" name="geschlecht" value="male">
                    <label for="mc">Männlich</label>
-                   <input type="radio" id="w" name="Geschlecht" value="Weiblich">
+                   <input type="radio" id="w" name="geschlecht" value="Weiblich">
                    <label for="vi">Weiblich</label>
                </fieldset>
            </div>
  
            <div id="angaben">
                <p>Gewicht in Kilo</p>
-                   <input name="gewicht" id="gewicht" min="20" max="400" step="1" maxlength="3" pattern="[0-9]" required >
+                   <input name="gewicht" id="gewicht" type="number" min="35" max="400" maxlength="3" required>
+                   <!-- <input name="gewicht" id="gewicht" min="20" max="400" step="1" maxlength="3" pattern="[0-9]" required > -->
                <p>Alter</p>
-                   <input name="alter" id="alter" min="0" max="100" maxlength="3" step="1" pattern="[0-9]" required>      
+                   <input name="alter" id="alter" min="0" max="100" maxlength="3" step="1" required>      
                <p>Größe in cm</p>
-                   <input name="groesse" id="groesse" min="0" max="250" maxlength="3" step="1" pattern="[0-9]" required>
- 
- 
+                   <input name="groesse" id="groesse" min="0" max="250" maxlength="3" step="1" required>
            </div>
  
            <div id="aktivitaet">
                <p>Aktivitätslevel</p>
                <select id="aktivitaetslevel">
-                   <option>vorwiegend liegend, z.B. Bett</option>
-                   <option>vorwiegend sitzend, z.B. Bürojob</option>
-                   <option>sitzend/ stehend, z.B. Barkeeper</option>
-                   <option>stehen/ gehend, z.B. Hostess</option>
-                   <option>sehr aktiv, z.B. Sportler</option>
+                   <option value="1.2">vorwiegend liegend, z.B. Bett</option>
+                   <option value="1.45">vorwiegend sitzend, z.B. Bürojob</option>
+                   <option value="1.65">sitzend/ stehend, z.B. Barkeeper</option>
+                   <option value="1.85">stehen/ gehend, z.B. Hostess</option>
+                   <option value="2.2">sehr aktiv, z.B. Sportler</option>
                </select>
            </div>
  
@@ -77,12 +76,15 @@
  
            <div id="buttons">
                <button id="zuruecksetzen" type="reset">Eingaben zurücksetzen</button>
-               <button id="berechnen" type="submit">Berechnen</button>
+               <button id="berechnen" type="button">Berechnen</button>
            </div>
  
            <div id="angaben">
-               <p>Ergebnis</p>
-               <input type="number" name="ergebnis" id="ergebnis" min="0" max="1000" maxlength="5">
+               <h3>Grundumsatz:</h3>
+               <p id="grundumsatz"></p>
+               <!-- <input type="number" name="ergebnis" id="ergebnis" min="0" max="1000" maxlength="5"> -->
+               <h3>Leistungsumsatz:</h3>
+               <p id="leistungsumsatz"></p>
            </div>
  
        </form>
