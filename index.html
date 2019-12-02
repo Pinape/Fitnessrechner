@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html>
-
+ 
 <head>
-    <meta charset="utf-8">
-    <title>Fitnessrechner</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
-    <meta name="description" content="Studienarbeit im Fach Web Engineering">
-    <link rel="stylesheet" href="styles.css">
+   <meta charset="utf-8">
+   <title>Fitnessrechner</title>
+   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+   <meta name="description" content="Studienarbeit im Fach Web Engineering">
+   <link rel="stylesheet" href="styles.css">
 </head>
-
+ 
 <body>
-    <div id="header">
-        <h1 id="homeheader">Was möchtest du berechnen?</h1>
-    </div>
-
-    <div class="rechnerauswahl">
-       <a href="kalorienrechner.html" alt="Kalorienrechner-Link">
-            <div class="kalorienrechner">
-                <img class="icon1" src="icons/calories.svg" alt="Kalorienrechner">
-                <p class="kalorienberechnen">Kalorienbedarf <br> berechnen</p>
+   <div class="header">
+       <h1 id="homeheader">Was möchtest du berechnen?</h1>
+   </div>
+ 
+ 
+   <div class="rechnerauswahl">
+      <a href="kalorienrechner.html" alt="Kalorienrechner-Link">
+           <div class="kalorienrechner" onmouseover="mouseOver1()" onmouseout="mouseOut1()">
+               <img class="icon1" src="icons/calories_rand.svg" alt="Kalorienrechner" width="222px" height="222px">
+               <p class="kalorienberechnen">Kalorienbedarf <br> berechnen</p>
+           </div>
+       </a>
+ 
+       <a href="wasserrechner.html" alt="Wasserbedarfsrechner-Link">
+            <div class="wasserrechner" onmouseover="mouseOver2()" onmouseout="mouseOut2()">
+                <img class="icon2" src="icons/drops_rand.svg" alt="Wasserbedarfsrechner" width="205.35px" height="205.35px">
+                <p class="wasserberechnen">Wasserbedarf <br> berechnen</p>
             </div>
-        </a>
-
-        <a href="wasserrechner.html" alt="Wasserbedarfsrechner-Link">
-             <div class="wasserrechner">
-                 <img class="icon2" src="icons/drops.svg" alt="Wasserbedarfsrechner">
-                 <p class="wasserberechnen">Wasserbedarf <br> berechnen</p>
-             </div>
-        </a>
-    </div>
-
+       </a>
+   </div>
+ 
+ 
+   <script src="scripts/background.js"></script>
+ 
 </body>
 </html>
