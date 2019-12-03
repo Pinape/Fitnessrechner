@@ -13,13 +13,13 @@
    <div class="navigation">
        <div id="iconHome">
            <a href="index.html" alt="Home-Link" width="1%" height="1%">
-               <img class="home" src="icons/home.svg" alt="Home-Link">
+               <img class="home" src="assets/home.svg" alt="Home-Link">
            </a>
        </div>
           
        <div id="iconDrops">
            <a href="wasserrechner.html" alt="Wasserbedarfsrechner-Link" width="1%" height="1%">
-               <img class="drops" src="/icons/drops.svg" alt="Wasserbedarfsrechner">
+               <img class="drops" src="assets/drops.svg" alt="Wasserbedarfsrechner">
            </a>
        </div>
  
@@ -37,7 +37,7 @@
            <div id="geschlecht">
                <p>Geschlecht</p>
                <fieldset id="geschlechterauswahl">
-                   <input type="radio" id="m" name="geschlecht" value="male">
+                   <input type="radio" id="m" name="geschlecht" value="male" checked>
                    <label for="mc">Männlich</label>
                    <input type="radio" id="w" name="geschlecht" value="Weiblich">
                    <label for="vi">Weiblich</label>
@@ -46,12 +46,12 @@
  
            <div id="angaben">
                <p>Gewicht in Kilo</p>
-                   <input name="gewicht" id="gewicht" type="number" min="35" max="400" maxlength="3" required>
+                   <input name="gewicht" id="gewicht" type="number" min="35" max="400" maxlength="3" pattern="[0-9]" required>
                    <!-- <input name="gewicht" id="gewicht" min="20" max="400" step="1" maxlength="3" pattern="[0-9]" required > -->
                <p>Alter</p>
-                   <input name="alter" id="alter" min="0" max="100" maxlength="3" step="1" required>      
+                   <input name="alter" id="alter" type="number" min="0" max="100" maxlength="3" step="1" required>      
                <p>Größe in cm</p>
-                   <input name="groesse" id="groesse" min="0" max="250" maxlength="3" step="1" required>
+                   <input name="groesse" id="groesse" type="number" min="0" max="250" maxlength="3" step="1" required>
            </div>
  
            <div id="aktivitaet">
@@ -74,6 +74,8 @@
                </select>
            </div> -->
  
+           <p id="fehler" style="color: red"></p>
+
            <div id="buttons">
                <button id="zuruecksetzen" type="reset">Eingaben zurücksetzen</button>
                <button id="berechnen" type="button">Berechnen</button>

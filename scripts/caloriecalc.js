@@ -1,26 +1,22 @@
 window.onload = () => {
 
-    // let weight = document.getElementById("weight")
-
-    // const valueError = new Error("invalid values")
-
-    // let weight = document.getElementById("gewicht").value
-    // let age = document.getElementById("alter").value
-    // let height = document.getElementById("groesse").value
-    // let result
-    // let gender = document.getElementById("m")
+   
 
 }
     // module.exports={
      let button = document.getElementById("berechnen")
         button.addEventListener("click", () => {
+
+            printError("")
+            document.getElementById("grundumsatz").innerHTML = ""
+            document.getElementById("leistungsumsatz").innerHTML = ""
+
                               
             let gender = document.querySelector('input[name="geschlecht"]:checked').value
             let weight = document.getElementById("gewicht").value
             let age = document.getElementById("alter").value
             let height = document.getElementById("groesse").value
             let result
-            
 
             function getPal (){
             let activity = document.getElementById("aktivitaetslevel")
@@ -29,13 +25,34 @@ window.onload = () => {
             return pal
             }
 
-            // document.querySelector("#aktivitaetslevel").onchange = function () {
-            //     let activity = document.querySelector("#aktivitaetslevel").value
-            //  }
+            function printError (warning){
+                document.getElementById("fehler").innerHTML = warning;
+            }
 
+
+            // if (!weight || !height || age < 16 || age > 99 || size < 140 || size > 300 || weight < 35) {
+                    
+            //         //    document.getElementById("fehler").innerHTML = "Ungültige Werte! Überprüfe deine Angaben"
+            //         printError("Ungültige Werte! Überprüfe deine Angaben")
+            //     }
+                
+            if (!weight || !height || !age){
+                printError("Sie haben nicht alle erforderlichen Felder ausgefüllt")
+            }
+            else if (age < 16 || age > 99) {
+                printError("Sie müssen mindestens 16 Jahre alt sein, um den Rechner zu nutzen")
+                }
+                else if(height < 140 || height > 300) {
+                printError("Sie müssen mindestens 140cm groß sein, um den Rechner zu nutzen")
+                 }
+
+                 else if (weight < 35) {
+                 printError("Sie müssen mindestens 35kg wiegen, um den Rechner zu nutzen")
+                 }
+
+                    else {
+                        if (gender == "male"){
             
-
-            if (gender == "male") {
                 result = 66.5 + ( 13.7 * weight ) + ( 5 * height ) - ( 6.8 * age )
                 palresult = result * getPal()
                 }
@@ -44,11 +61,10 @@ window.onload = () => {
                 palresult = result * getPal()
                 }
 
-                
-
                 document.getElementById("grundumsatz").innerHTML = Math.round(result)
                 document.getElementById("leistungsumsatz").innerHTML = Math.round(palresult)
 
+                    }
             })
             
         //     console.log("Funktion wird aufgerufen")
