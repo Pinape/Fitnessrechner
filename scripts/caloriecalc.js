@@ -1,72 +1,67 @@
 window.onload = () => {
 
-   
+
 
 }
-    // module.exports={
-     let button = document.getElementById("berechnen")
-        button.addEventListener("click", () => {
+// module.exports={
+let button = document.getElementById("berechnen")
+button.addEventListener("click", () => {
 
-            printError("")
-            document.getElementById("grundumsatz").innerHTML = ""
-            document.getElementById("leistungsumsatz").innerHTML = ""
-
-                              
-            let gender = document.querySelector('input[name="geschlecht"]:checked').value
-            let weight = document.getElementById("gewicht").value
-            let age = document.getElementById("alter").value
-            let height = document.getElementById("groesse").value
-            let result
-
-            function getPal (){
-            let activity = document.getElementById("aktivitaetslevel")
-            let i = activity.selectedIndex
-            let pal = activity.options[i].value
-            return pal
-            }
-
-            function printError (warning){
-                document.getElementById("fehler").innerHTML = warning;
-            }
+    printError("")
+    document.getElementById("grundumsatz").innerHTML = ""
+    document.getElementById("leistungsumsatz").innerHTML = ""
 
 
-            // if (!weight || !height || age < 16 || age > 99 || size < 140 || size > 300 || weight < 35) {
-                    
-            //         //    document.getElementById("fehler").innerHTML = "Ungültige Werte! Überprüfe deine Angaben"
-            //         printError("Ungültige Werte! Überprüfe deine Angaben")
-            //     }
-                
-            if (!weight || !height || !age){
-                printError("Sie haben nicht alle erforderlichen Felder ausgefüllt")
-            }
-            else if (age < 16 || age > 99) {
-                printError("Sie müssen mindestens 16 Jahre alt sein, um den Rechner zu nutzen")
-                }
-                else if(height < 140 || height > 300) {
-                printError("Sie müssen mindestens 140cm groß sein, um den Rechner zu nutzen")
-                 }
+    let gender = document.querySelector('input[name="geschlecht"]:checked').value
+    let weight = document.getElementById("gewicht").value
+    let age = document.getElementById("alter").value
+    let height = document.getElementById("groesse").value
+    let result
 
-                 else if (weight < 35) {
-                 printError("Sie müssen mindestens 35kg wiegen, um den Rechner zu nutzen")
-                 }
+    function getPal() {
+        let activity = document.getElementById("aktivitaetslevel")
+        let i = activity.selectedIndex
+        let pal = activity.options[i].value
+        return pal
+    }
 
-                    else {
-                        if (gender == "male"){
-            
-                result = 66.5 + ( 13.7 * weight ) + ( 5 * height ) - ( 6.8 * age )
-                palresult = result * getPal()
-                }
-                else {
-                result = 655.1 + ( 9.6 * weight ) + ( 1.8 * height ) - ( 4.7 * age )
-                palresult = result * getPal()
-                }
+    function printError(warning) {
+        document.getElementById("fehler").innerHTML = warning;
+    }
 
-                document.getElementById("grundumsatz").innerHTML = Math.round(result)
-                document.getElementById("leistungsumsatz").innerHTML = Math.round(palresult)
 
-                    }
-            })
-            
+    // if (!weight || !height || age < 16 || age > 99 || size < 140 || size > 300 || weight < 35) {
+
+    //         //    document.getElementById("fehler").innerHTML = "Ungültige Werte! Überprüfe deine Angaben"
+    //         printError("Ungültige Werte! Überprüfe deine Angaben")
+    //     }
+
+    if (!weight || !height || !age) {
+        printError("Sie haben nicht alle erforderlichen Felder ausgefüllt")
+    }
+    else if (age < 16 || age > 99) {
+        printError("Sie müssen mindestens 16 Jahre alt sein, um den Rechner zu nutzen")
+    }
+    else if (height < 140 || height > 300) {
+        printError("Sie müssen mindestens 140cm groß sein, um den Rechner zu nutzen")
+    }
+
+    else if (weight < 35) {
+        printError("Sie müssen mindestens 35kg wiegen, um den Rechner zu nutzen")
+    }
+
+    else {
+
+        const {
+            grundumsatz, leistungsumsatz
+        } = harris(weight, height, age, getPal(), gender)
+
+        document.getElementById("grundumsatz").innerHTML = Math.round(grundumsatz)
+        document.getElementById("leistungsumsatz").innerHTML = Math.round(leistungsumsatz)
+
+    }
+})
+
         //     console.log("Funktion wird aufgerufen")
         //     function harris (weight, size, age) {
         //     weight = document.querySelector("#gewicht").value
@@ -95,7 +90,7 @@ window.onload = () => {
         //     else {
         //     const formula = Math.round(66.47 + (13.7 * weight) + (5 * size) - (6.8 * age))
         //     return formula
-            
+
 
         //     }}
         //     console.log(weight)
@@ -113,7 +108,7 @@ window.onload = () => {
     //     x = 30;
     //     return x;
     // };
-    
+
     // module.exports = functions;
 
     //const harrisW

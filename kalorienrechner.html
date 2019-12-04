@@ -1,71 +1,72 @@
 <!DOCTYPE html>
 <html>
- 
+
 <head>
-   <meta charset="utf-8">
-   <title>Kalorienrechner</title>
-   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
-   <meta name="description" content="Studienarbeit im Fach Web Engineering">
-   <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <title>Kalorienrechner</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+    <meta name="description" content="Studienarbeit im Fach Web Engineering">
+    <link rel="stylesheet" href="styles.css">
 </head>
- 
+
 <body>
-   <div class="navigation">
-       <div id="iconHome">
-           <a href="index.html" alt="Home-Link" width="1%" height="1%">
-               <img class="home" src="assets/home.svg" alt="Home-Link">
-           </a>
-       </div>
-          
-       <div id="iconDrops">
-           <a href="wasserrechner.html" alt="Wasserbedarfsrechner-Link" width="1%" height="1%">
-               <img class="drops" src="assets/drops.svg" alt="Wasserbedarfsrechner">
-           </a>
-       </div>
- 
-           <div style="clear: both;"></div>
-   </div>
- 
-   <div class="header">
-       <h1>Checke deine Fitness</h1>
-       <h2>- Kalorienrechner -</h2>
-       <p>Berechne deinen Grundumsatz!</p>
-   </div>
-   <div>
- 
-       <form id="formular">
-           <div id="geschlecht">
-               <p>Geschlecht</p>
-               <fieldset id="geschlechterauswahl">
-                   <input type="radio" id="m" name="geschlecht" value="male" checked>
-                   <label for="mc">Männlich</label>
-                   <input type="radio" id="w" name="geschlecht" value="Weiblich">
-                   <label for="vi">Weiblich</label>
-               </fieldset>
-           </div>
- 
-           <div id="angaben">
-               <p>Gewicht in Kilo</p>
-                   <input name="gewicht" id="gewicht" type="number" min="35" max="400" maxlength="3" pattern="[0-9]" required>
-                   <!-- <input name="gewicht" id="gewicht" min="20" max="400" step="1" maxlength="3" pattern="[0-9]" required > -->
-               <p>Alter</p>
-                   <input name="alter" id="alter" type="number" min="0" max="100" maxlength="3" step="1" required>      
-               <p>Größe in cm</p>
-                   <input name="groesse" id="groesse" type="number" min="0" max="250" maxlength="3" step="1" required>
-           </div>
- 
-           <div id="aktivitaet">
-               <p>Aktivitätslevel</p>
-               <select id="aktivitaetslevel">
-                   <option value="1.2">vorwiegend liegend, z.B. Bett</option>
-                   <option value="1.45">vorwiegend sitzend, z.B. Bürojob</option>
-                   <option value="1.65">sitzend/ stehend, z.B. Barkeeper</option>
-                   <option value="1.85">stehen/ gehend, z.B. Hostess</option>
-                   <option value="2.2">sehr aktiv, z.B. Sportler</option>
-               </select>
-           </div>
- 
-           <!-- <div id="ziel">
+    <div class="navigation">
+        <div id="iconHome">
+            <a href="index.html" alt="Home-Link" width="1%" height="1%">
+                <img class="home" src="assets/home.svg" alt="Home-Link">
+            </a>
+        </div>
+
+        <div id="iconDrops">
+            <a href="wasserrechner.html" alt="Wasserbedarfsrechner-Link" width="1%" height="1%">
+                <img class="drops" src="assets/drops.svg" alt="Wasserbedarfsrechner">
+            </a>
+        </div>
+
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="header">
+        <h1>Checke deine Fitness</h1>
+        <h2>- Kalorienrechner -</h2>
+        <p>Berechne deinen Grundumsatz!</p>
+    </div>
+    <div>
+
+        <form id="formular">
+            <div id="geschlecht">
+                <p>Geschlecht</p>
+                <fieldset id="geschlechterauswahl">
+                    <input type="radio" id="m" name="geschlecht" value="male" checked>
+                    <label for="mc">Männlich</label>
+                    <input type="radio" id="w" name="geschlecht" value="Weiblich">
+                    <label for="vi">Weiblich</label>
+                </fieldset>
+            </div>
+
+            <div id="angaben">
+                <p>Gewicht in Kilo</p>
+                <input name="gewicht" id="gewicht" type="number" min="35" max="400" maxlength="3" pattern="[0-9]"
+                    required>
+                <!-- <input name="gewicht" id="gewicht" min="20" max="400" step="1" maxlength="3" pattern="[0-9]" required > -->
+                <p>Alter</p>
+                <input name="alter" id="alter" type="number" min="0" max="100" maxlength="3" step="1" required>
+                <p>Größe in cm</p>
+                <input name="groesse" id="groesse" type="number" min="0" max="250" maxlength="3" step="1" required>
+            </div>
+
+            <div id="aktivitaet">
+                <p>Aktivitätslevel</p>
+                <select id="aktivitaetslevel">
+                    <option value="1.2">vorwiegend liegend, z.B. Bett</option>
+                    <option value="1.45">vorwiegend sitzend, z.B. Bürojob</option>
+                    <option value="1.65">sitzend/ stehend, z.B. Barkeeper</option>
+                    <option value="1.85">stehen/ gehend, z.B. Hostess</option>
+                    <option value="2.2">sehr aktiv, z.B. Sportler</option>
+                </select>
+            </div>
+
+            <!-- <div id="ziel">
                <p>Ziel</p>
                <select id="zieloptionen">
                    <option>Abnehmen</option>
@@ -73,26 +74,29 @@
                    <option>Zunehmen</option>
                </select>
            </div> -->
- 
-           <p id="fehler" style="color: red"></p>
 
-           <div id="buttons">
-               <button id="zuruecksetzen" type="reset">Eingaben zurücksetzen</button>
-               <button id="berechnen" type="button">Berechnen</button>
-           </div>
- 
-           <div id="angaben">
-               <h3>Grundumsatz:</h3>
-               <p id="grundumsatz"></p>
-               <!-- <input type="number" name="ergebnis" id="ergebnis" min="0" max="1000" maxlength="5"> -->
-               <h3>Leistungsumsatz:</h3>
-               <p id="leistungsumsatz"></p>
-           </div>
- 
-       </form>
- 
-   </div>
- 
-<script src="scripts/caloriecalc.js"></script>
- 
-</body></html>
+            <p id="fehler" style="color: red"></p>
+
+            <div id="buttons">
+                <button id="zuruecksetzen" type="reset">Eingaben zurücksetzen</button>
+                <button id="berechnen" type="button">Berechnen</button>
+            </div>
+
+            <div id="angaben">
+                <h3>Grundumsatz:</h3>
+                <p id="grundumsatz"></p>
+                <!-- <input type="number" name="ergebnis" id="ergebnis" min="0" max="1000" maxlength="5"> -->
+                <h3>Leistungsumsatz:</h3>
+                <p id="leistungsumsatz"></p>
+            </div>
+
+        </form>
+
+    </div>
+    
+    <script src="scripts/harris.js"></script>
+    <script src="scripts/caloriecalc.js"></script>
+
+</body>
+
+</html>
