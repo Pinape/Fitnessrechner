@@ -19,9 +19,18 @@ button.addEventListener("click", () => {
     let result
 
     function getPal() {
+        let palValues = {
+            "liegend": 1.2,
+            "sitzend": 1.45,
+            "stehend": 1.65,
+            "gehend": 1.85,
+            "aktiv": 2.2
+        }
+
         let activity = document.getElementById("aktivitaetslevel")
         let i = activity.selectedIndex
-        let pal = activity.options[i].value
+        let palString = activity.options[i].value
+        let pal = palValues[palString]
         return pal
     }
 
@@ -56,8 +65,8 @@ button.addEventListener("click", () => {
             grundumsatz, leistungsumsatz
         } = harris(weight, height, age, getPal(), gender)
 
-        document.getElementById("grundumsatz").innerHTML = Math.round(grundumsatz)
-        document.getElementById("leistungsumsatz").innerHTML = Math.round(leistungsumsatz)
+        document.getElementById("grundumsatz").innerHTML = Math.round(grundumsatz) + " kcal"
+        document.getElementById("leistungsumsatz").innerHTML = Math.round(leistungsumsatz) + " kcal"
 
     }
 })

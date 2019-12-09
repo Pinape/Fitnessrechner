@@ -1,7 +1,11 @@
 function harris(weight, height, age, pal, gender) {
+
+
+
     let result
     if (gender == "male") {
 
+        
         result = 66.5 + (13.7 * weight) + (5 * height) - (6.8 * age)
         palresult = result * pal
     }
