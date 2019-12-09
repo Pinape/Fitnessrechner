@@ -29,6 +29,14 @@ h2 {
     font-weight: lighter;
 }
 
+h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 2% 0;
+    letter-spacing: 2px;
+    font-size: 17px;
+}
+
 p {
     text-transform: uppercase;
     font-weight: 300;
@@ -71,7 +79,6 @@ a {
     }
 }
 
-
 .calories {
     padding: 10%;
     width: 100%;
@@ -85,7 +92,6 @@ a {
     box-shadow: 5px 1px 200px #edac8cc0;
 }
 
-
 .drops {
     padding: 10%;
     width: 100%;
@@ -98,7 +104,6 @@ a {
     background-color: #7eabd8be;
     box-shadow: 5px 1px 200px #7eabd8be;
 }
-
 
 .home {
     padding: 13%;
@@ -117,7 +122,6 @@ label {
     font-weight: 100;
 }
 
-
 #formular {
     width:40%;
     margin: 0 auto;
@@ -134,11 +138,11 @@ label {
     margin-bottom: 3%;
 }
 
-#angaben {
+#angaben{
     display: flex;
     flex-direction: column;
+    margin-top: 5%;
 }
-
 
 #geschlechterauswahl {
     border: none;
@@ -146,11 +150,9 @@ label {
     margin: 0;
 }
 
-
 #m {
     margin-right: 2%;
 }
-
 
 #w {
     margin-left: 5%;
@@ -176,7 +178,6 @@ label {
 input {
     margin: 0 auto;
 }
-
 
 #aktivitaet,
 #ziel,
@@ -259,6 +260,7 @@ select {
     display: flex;
     justify-content: center;
     margin-top: 8%;
+    margin-bottom: 8%;
 }
 
 button {
@@ -268,9 +270,26 @@ button {
     border: none;
 }
 
-
 #ergebnis{
     font-weight: 500;
+}
+
+.ergebnisfeld p{
+    text-align: center;
+    padding-left: 30px;
+}
+
+.ergebnisfeld {
+    background-color: white;
+    margin-bottom: 2%;
+    width: 20%;
+    height: 20px;
+    padding: 1% 3%;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px none #adadad;
+    margin-left: 37%;
+    display: flex;
 }
 
 /* ------- Media Queries für Fitnessrechner ------*/
@@ -281,7 +300,6 @@ button {
         padding:5%;
     }
 }
-
 
 @media only screen and (max-width: 425px) {
     select { 
@@ -313,7 +331,6 @@ button {
         font-size: 80%;  
     }
 }
-
 
 @media only screen and (min-width: 786px) {
     #buttons {
@@ -355,8 +372,8 @@ button {
 .icon1:hover{
     background-color: #edac8cc0;
     box-shadow: 5px 1px 200px #edac8cc0;
-    width: 130%;
-    height: 130%;
+    width: 150%;
+    height: 150%;
     transition: ease-in-out 1s;
 }
 
@@ -387,8 +404,8 @@ button {
 .icon2:hover {
     background-color: #7eabd8be;
     box-shadow: 5px 1px 200px #7eabd8be;
-    width: 151%;
-    height: 151%;
+    width: 171%;
+    height: 171%;
     transition: ease-in-out 1s;
 }
 
@@ -414,4 +431,3 @@ button {
         margin-top: 5%;
     }
 }
-
