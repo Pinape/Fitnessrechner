@@ -1,0 +1,60 @@
+.kalorienberechnen {
+    padding: 0;
+    margin-top: 10%;
+    margin-left: -5%;
+    align-items: center;
+    align-content: center;
+    line-height: 140%;
+}
+
+.icon1 {
+    background-color: #edad8c80;
+    border-radius: 50%;
+    width: 60%;
+    margin-right: 7%;
+    height: 60%;
+}
+
+.icon1:hover {
+    background-color: #edac8cc0;
+    box-shadow: 5px 1px 200px #edac8cc0;
+    width: 60%;
+    height: 60%;
+    transition: ease-in-out 1s;
+}
+
+.icon2 {
+    background-color: #7eabd878;
+    border-radius: 50%;
+    width: 60%;
+    height: 60%;
+}
+
+.icon2:hover {
+    background-color: #7eabd8be;
+    box-shadow: 5px 1px 200px #7eabd8be;
+    width: 60%;
+    height: 60%;
+    transition: ease-in-out 1s;
+}
+
+.wasserberechnen{
+    padding: 0;
+    margin-top: 10%;
+    align-items: center;
+    line-height: 140%;
+}
+
+@media only screen and (max-width: 475px) {
+    .wasserrechner {
+        width: 100%;
+        height:100%;
+    }
+
+    .kalorienrechner {
+        margin-left: 2.5%;
+        width: 102%;
+        height:102%;
+    }
+    
+}
