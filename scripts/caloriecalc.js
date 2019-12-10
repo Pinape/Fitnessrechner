@@ -1,22 +1,23 @@
 window.onload = () => {
-
-
-
 }
 // module.exports={
-let button = document.getElementById("berechnen")
-button.addEventListener("click", () => {
+// let button = document.getElementById("berechnen")
+// button.addEventListener("click", () => {
+
+// let input = document.querySelectorAll(".input")
+// input.addEventListener("oninput", () => {
+
+let sel = document.getElementById("werte")
+sel.addEventListener ("input", function () {
 
     printError("")
     document.getElementById("grundumsatz").innerHTML = ""
     document.getElementById("leistungsumsatz").innerHTML = ""
 
-
     let gender = document.querySelector('input[name="geschlecht"]:checked').value
     let weight = document.getElementById("gewicht").value
     let age = document.getElementById("alter").value
     let height = document.getElementById("groesse").value
-    let result
 
     function getPal() {
         let palValues = {
@@ -48,15 +49,14 @@ button.addEventListener("click", () => {
     if (!weight || !height || !age) {
         printError("Sie haben nicht alle erforderlichen Felder ausgefüllt")
     }
+    else if (weight < 35) {
+        printError("Sie müssen mindestens 35kg wiegen, um den Rechner zu nutzen")
+    }
     else if (age < 16 || age > 99) {
         printError("Sie müssen mindestens 16 Jahre alt sein, um den Rechner zu nutzen")
     }
     else if (height < 140 || height > 300) {
         printError("Sie müssen mindestens 140cm groß sein, um den Rechner zu nutzen")
-    }
-
-    else if (weight < 35) {
-        printError("Sie müssen mindestens 35kg wiegen, um den Rechner zu nutzen")
     }
 
     else {
@@ -69,6 +69,7 @@ button.addEventListener("click", () => {
         document.getElementById("leistungsumsatz").innerHTML = Math.round(leistungsumsatz) + " kcal"
 
     }
+
 })
 
         //     console.log("Funktion wird aufgerufen")
