@@ -12,15 +12,15 @@
 <body>
     <div class="navigation">
         <div id="iconHome">
-        <a href="index.html" alt="Home-Link" width="1%" height="1%">
-            <img class="home" src="assets/home.svg" alt="Home-Link">
-        </a>
+            <a href="index.html" alt="Home-Link" width="1%" height="1%">
+                <img class="home" src="assets/home.svg" alt="Home-Link">
+            </a>
         </div>
-        
+
         <div id="iconKalorien">
-        <a href="kalorienrechner.html" alt="Kalorienrechner-Link" width="1%" height="1%">
-            <img class="calories" src="assets/calories.svg" alt="Kalorienrechner">
-        </a>
+            <a href="kalorienrechner.html" alt="Kalorienrechner-Link" width="1%" height="1%">
+                <img class="calories" src="assets/calories.svg" alt="Kalorienrechner">
+            </a>
         </div>
         <div style="clear: both;"></div>
     </div>
@@ -34,30 +34,36 @@
     <div>
 
         <form id="formular">
-            <div id="angaben">
-                <p>Alter</p>
-                <input type="number" name="alter" id="alter" min="0" max="100" maxlength="3" required>
+            <div id="werte">
+                <div id="angaben">
+                    <p>Alter</p>
+                    <input type="number" name="alter" id="alter" min="16" max="100" maxlength="3" required>
 
-                <p>Gewicht in Kilo</p>
-                <input type="number" name="gewicht" id="gewicht" min="20" max="400" maxlength="3" required>
+                    <p>Gewicht in Kilo</p>
+                    <input type="number" name="gewicht" id="gewicht" min="35" max="400" maxlength="3" required>
+                </div>
             </div>
 
+            <p id="fehler" style="color: red"></p>
 
             <div id="buttons">
                 <button id="zuruecksetzen" type="reset">Eingaben zurücksetzen</button>
-                <button id="berechnen" type="submit">Berechnen</button>
+                <!-- <button id="berechnen" type="submit">Berechnen</button> -->
             </div>
 
             <div id="angaben">
                 <h3>Ergebnis:</h3>
-                <div class="ergebnisfeld">
-                <p id="wasserbedarf"></p>
-            </div>
+                <div class="ergebnisfeldWasser">
+                    <p id="wasserbedarf"></p>
+                </div>
 
         </form>
 
     </div>
 
+    <script src="scripts/watercalc.js"></script>
+    <script src="scripts/waterformular.js"></script>
+    <script src="scripts/inputOhneE.js"></script>
 
 </body>
 

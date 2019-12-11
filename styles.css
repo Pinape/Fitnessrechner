@@ -449,6 +449,23 @@ button {
     line-height: 140%;
 }
 
+#wasserbedarf {
+    margin: 0 auto;
+}
+
+.ergebnisfeldWasser {
+    background-color: white;
+    margin-bottom: 2%;
+    width: 25%;
+    height: 20px;
+    padding: 1% 3%;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px none #adadad;
+    margin: 0 auto;
+    display: flex;
+}
+
 
 /*---- Media Queries Home -----*/
 
@@ -462,5 +479,35 @@ button {
     .wasserrechner {
         margin-top: 5%;
         margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 1547px) {
+    .ergebnisfeldWasser {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 1289px) {
+    .ergebnisfeldWasser  {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1105px) {
+    .ergebnisfeldWasser  {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 967px) {
+    .ergebnisfeldWasser  {
+        width: 52%;
+    }
+}
+
+@media only screen and (max-width: 371px) {
+    .ergebnisfeldWasser  {
+        width: 65%;
     }
 }
