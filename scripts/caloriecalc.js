@@ -48,6 +48,7 @@ sel.addEventListener ("input", function () {
 
     if (!weight || !height || !age) {
         printError("Sie haben nicht alle erforderlichen Felder ausgefüllt")
+        // throw "Sie haben nicht alle erforderlichen Felder ausgefüllt"
     }
     else if (weight < 35) {
         printError("Sie müssen mindestens 35kg wiegen, um den Rechner zu nutzen")
@@ -57,6 +58,7 @@ sel.addEventListener ("input", function () {
     }
     else if (height < 140 || height > 300) {
         printError("Sie müssen mindestens 140cm groß sein, um den Rechner zu nutzen")
+        throw "fehler"
     }
 
     else {
@@ -65,8 +67,8 @@ sel.addEventListener ("input", function () {
             grundumsatz, leistungsumsatz
         } = harris(weight, height, age, getPal(), gender)
 
-        document.getElementById("grundumsatz").innerHTML = Math.round(grundumsatz) + " kcal"
-        document.getElementById("leistungsumsatz").innerHTML = Math.round(leistungsumsatz) + " kcal"
+        document.getElementById("grundumsatz").innerHTML = grundumsatz + " kcal"
+        document.getElementById("leistungsumsatz").innerHTML = leistungsumsatz + " kcal"
 
     }
 
