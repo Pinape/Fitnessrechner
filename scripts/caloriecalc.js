@@ -13,10 +13,14 @@ let weight
 let age
 let height
 
+
 let sel = document.getElementById("werte")
 sel.addEventListener("input", function () {
 
-    // printError("")
+    let activity = document.getElementById("aktivitaetslevel")
+    let i = activity.selectedIndex
+    let pal = String(activity.options[i].value)
+
     document.getElementById("grundumsatz").innerHTML = ""
     document.getElementById("leistungsumsatz").innerHTML = ""
 
@@ -25,15 +29,17 @@ sel.addEventListener("input", function () {
     age = document.getElementById("alter").value
     height = document.getElementById("groesse").value
 
-
-    const {
-        grundumsatz, leistungsumsatz
-    } = harris(weight, height, age, getPal(), gender)
-
+    let result = {}
+    try {
+        result = harris(weight, height, age, pal, gender)
+    } catch (err) {
+        printError(err)
+    }
 
     if (wrongInput == false) {
-        document.getElementById("grundumsatz").innerHTML = grundumsatz + " kcal"
-        document.getElementById("leistungsumsatz").innerHTML = leistungsumsatz + " kcal"
+        printError("")
+        document.getElementById("grundumsatz").innerHTML = result.grundumsatz + " kcal"
+        document.getElementById("leistungsumsatz").innerHTML = result.leistungsumsatz + " kcal"
     }
 
 
