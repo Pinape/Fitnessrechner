@@ -7,8 +7,8 @@ sel.addEventListener("input", function () {
     printError("")
     document.getElementById("wasserbedarf").innerHTML = ""
 
-    let weight = document.getElementById("gewicht").value
-    let age = document.getElementById("alter").value
+    const weight = document.getElementById("gewicht").value
+    const age = document.getElementById("alter").value
 
     function printError(warning) {
         document.getElementById("fehler").innerHTML = warning;

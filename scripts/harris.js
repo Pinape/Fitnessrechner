@@ -6,8 +6,6 @@ function harris(weight, height, age, pal, gender) {
         checkInput(weight,height,age)
         result = Math.round(66.5 + (13.7 * weight) + (5 * height) - (6.8 * age))
         palresult = Math.round(result * getPal(pal))
-
-        console.log(getPal(pal))
     }
     else {
         checkInput(weight,height,age)
@@ -15,14 +13,10 @@ function harris(weight, height, age, pal, gender) {
         palresult = Math.round(result * getPal(pal))
     }
 
-console.log(result)
-console.log(palresult)
-
     return {
         grundumsatz: result,
         leistungsumsatz: palresult
     }
-
 }
 
 

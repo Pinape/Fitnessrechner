@@ -8,26 +8,22 @@ window.onload = () => {
 // let input = document.querySelectorAll(".input")
 // input.addEventListener("oninput", () => {
 
-let gender
-let weight
-let age
-let height
-
 
 let sel = document.getElementById("werte")
 sel.addEventListener("input", function () {
 
-    let activity = document.getElementById("aktivitaetslevel")
-    let i = activity.selectedIndex
-    let pal = String(activity.options[i].value)
+
+    const activity = document.getElementById("aktivitaetslevel")
+    const i = activity.selectedIndex
+    const pal = String(activity.options[i].value)
 
     document.getElementById("grundumsatz").innerHTML = ""
     document.getElementById("leistungsumsatz").innerHTML = ""
 
-    gender = document.querySelector('input[name="geschlecht"]:checked').value
-    weight = document.getElementById("gewicht").value
-    age = document.getElementById("alter").value
-    height = document.getElementById("groesse").value
+    const gender = document.querySelector('input[name="geschlecht"]:checked').value
+    const weight = document.getElementById("gewicht").value
+    const age = document.getElementById("alter").value
+    const height = document.getElementById("groesse").value
 
     let result = {}
     try {

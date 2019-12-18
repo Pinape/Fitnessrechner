@@ -1,4 +1,3 @@
-var inputBox = document.getElementById("gewicht");
 var invalidChars = [
     "-",
     "+",
@@ -7,38 +6,18 @@ var invalidChars = [
     "."
 ];
 
-inputBox.addEventListener("keydown", function (e) {
-    if (invalidChars.includes(e.key)) {
-        e.preventDefault();
-    }
-});
 
-var inputBox = document.getElementById("alter");
-var invalidChars = [
-    "-",
-    "+",
-    "e",
-    ",",
-    "."
-];
+function disableInvalidKeys(inputBox) {
+    inputBox.addEventListener("keydown", function (e) {
+        if (invalidChars.includes(e.key)) {
+            e.preventDefault();
+        }
+    });
+}
 
-inputBox.addEventListener("keydown", function (e) {
-    if (invalidChars.includes(e.key)) {
-        e.preventDefault();
-    }
-});
 
-var inputBox = document.getElementById("groesse");
-var invalidChars = [
-    "-",
-    "+",
-    "e",
-    ",",
-    "."
-];
+disableInvalidKeys(document.getElementById("gewicht"))
 
-inputBox.addEventListener("keydown", function (e) {
-    if (invalidChars.includes(e.key)) {
-        e.preventDefault();
-    }
-});
+disableInvalidKeys(document.getElementById("alter"))
+
+disableInvalidKeys(document.getElementById("groesse"))
