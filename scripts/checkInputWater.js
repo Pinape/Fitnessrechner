@@ -1,9 +1,9 @@
 let wrongInput = new Boolean(false)
 
-function checkInput(weight,height,age) {
+function checkInput(age, weight) {
 
 
-    if (!weight || !height || !age) {
+    if (!weight || !age) {
         wrongInput = true
         throw "Sie haben nicht alle erforderlichen Felder ausgefüllt"
     }
@@ -14,10 +14,6 @@ function checkInput(weight,height,age) {
     if (age < 16 || age > 99) {
         wrongInput = true
         throw "Sie müssen mindestens 16 Jahre alt sein, um den Rechner zu nutzen"
-    }
-    if (height < 140 || height > 300) {
-        wrongInput = true
-        throw "Sie müssen mindestens 140cm groß sein, um den Rechner zu nutzen"
     }
 
     else {

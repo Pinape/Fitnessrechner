@@ -9,7 +9,10 @@ describe('calculator', () => {
 
   const defaultWeight = 85
   const defaultAge = 35
-  
+
+  const defaultAgeYoung = 30
+  const defaultAgeOld = 70
+
   const underAge = 15
   const overAge = 150
   const underWeight = 30
@@ -17,7 +20,7 @@ describe('calculator', () => {
 
 
   it('should print out a default value', () => {
-    expect(waterformular(defaultWeight, defaultAge,)).toEqual({ wasserbedarf: 2975})
+    expect(waterformular(defaultAge, defaultWeight)).toEqual({ wasserbedarf: 2975 })
   })
 
   
@@ -26,7 +29,6 @@ describe('calculator', () => {
       waterformular(defaultAge,"","")
     }).toThrow()  
   })
-
 
 
   it('should throw an error if the person is under 16', () => {
@@ -47,5 +49,14 @@ describe('calculator', () => {
     expect(() => { waterformular(defaultAge, overWeight) }).toThrow()
   })
 
+
+
+  it('should take formular multiplicator 35', () => {
+    expect(() => { waterformular(defaultAgeYoung, defaultWeight) }).toThrow()
+  })
+
+  it('should take formular multiplicator 30', () => {
+    expect(() => { waterformular(defaultAgeOld, defaultWeight) }).toThrow()
+  })  
 
 })

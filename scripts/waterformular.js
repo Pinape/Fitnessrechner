@@ -2,16 +2,17 @@ function waterformular(weight, age) {
 
     let result
     if (age < 64) {
-
-        result = weight * 35
+        checkInput(weight, age)
+        result = Math.round(weight * 35)
     }
     
     else {
-        result = weight * 30
+        checkInput(weight, age)
+        result = Math.round(weight * 30)
     }
 
     return {
-        wasserbedarf: result,
+        wasserbedarf: result
     }
 }
 
