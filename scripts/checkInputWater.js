@@ -1,6 +1,6 @@
 let wrongInput = new Boolean(false)
 
-function checkInput(age, weight) {
+function checkInputWater (weight, age) {
 
 
     if (!weight || !age) {
@@ -27,10 +27,10 @@ function checkInput(age, weight) {
 
 if (module) {
     module.exports = {
-        checkInput
+        checkInputWater
     }
 }
 
 if (window) {
-    window.checkInput = checkInput
+    window.checkInputWater = checkInputWater
 }
