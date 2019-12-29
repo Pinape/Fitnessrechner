@@ -31,14 +31,6 @@ h2 {
     font-weight: lighter;
 }
 
-h3 {
-    text-transform: uppercase;
-    font-weight: 300;
-    margin: 2% 0;
-    letter-spacing: 2px;
-    font-size: 17px;
-}
-
 p {
     text-transform: uppercase;
     font-weight: 300;
@@ -132,7 +124,11 @@ a {
 }
 
 label {
-    font-weight: 100;
+    text-transform: lowercase;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
 }
 
 #formular {
@@ -154,7 +150,6 @@ label {
 #angaben {
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
 }
 
 #geschlechterauswahl {
@@ -256,11 +251,11 @@ select {
 
 #zuruecksetzen {
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 17px;
     color: white;
     background-color: #adadad;
     padding: 2% 5%;
-    margin-top: 4%;
+    margin-top: 2%;
     text-align: center;
 }
 
@@ -279,9 +274,10 @@ select {
 
 button {
     text-transform: uppercase;
-    font-weight: 200;
+    font-weight: 300;
     letter-spacing: 2px;
     border: none;
+    font-size: 17%;
 }
 
 #ergebnis {
@@ -303,6 +299,7 @@ button {
     border-radius: 10px;
     border: 1px none #adadad;
     margin: 0 auto;
+    margin-bottom: 2%;
     display: flex;
 }
 
