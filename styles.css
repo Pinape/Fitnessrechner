@@ -44,6 +44,11 @@ a {
 }
 
 
+#fehler {
+    color: red;
+    padding: 0 15%;
+}
+
 /* ------- Navigation ------*/
 
 .navigation {
@@ -474,6 +479,7 @@ button {
     border-radius: 10px;
     border: 1px none #adadad;
     margin: 0 auto;
+    margin-bottom: 3%;
     display: flex;
 }
 
