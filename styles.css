@@ -407,25 +407,19 @@ button {
 .icon1 {
     background-color: #edad8c80;
     border-radius: 50%;
-    width: 50%;
+    width: 150%;
     margin-right: 7%;
-    height: 50%;
+    height: 150%;
 }
 
 .icon1:hover {
     background-color: #edac8cc0;
-    width: 50%;
-    height: 50%;
+    width: 150%;
+    height: 150%;
     transition: ease-in-out 1s;
 }
 
-.icon1:hover .backgroundKalorien {
-    visibility: visible;
-}
 
-.backgroundKalorien {
-    visibility: hidden;
-}
 
 .kalorienberechnen {
     padding: 5%;
@@ -434,7 +428,16 @@ button {
     line-height: 140%;
 }
 
-/*.backgroundWasser {
+/*
+.icon1:hover .backgroundKalorien {
+    visibility: visible;
+}
+
+.backgroundKalorien {
+    visibility: hidden;
+}
+
+.backgroundWasser {
     visibility: hidden;
 }
 
@@ -472,14 +475,14 @@ button {
 .icon2 {
     background-color: #7eabd878;
     border-radius: 50%;
-    width: 50%;
-    height: 50%;
+    width: 163%;
+    height: 163%;
 }
 
 .icon2:hover {
     background-color: #7eabd8be;
-    width: 50%;
-    height: 50%;
+    width: 163%;
+    height: 163%;
     transition: ease-in-out 1s;
 }
 
