@@ -407,16 +407,24 @@ button {
 .icon1 {
     background-color: #edad8c80;
     border-radius: 50%;
-    width: 150%;
+    width: 50%;
     margin-right: 7%;
-    height: 150%;
+    height: 50%;
 }
 
 .icon1:hover {
     background-color: #edac8cc0;
-    width: 150%;
-    height: 150%;
+    width: 50%;
+    height: 50%;
     transition: ease-in-out 1s;
+}
+
+.icon1:hover .backgroundKalorien {
+    visibility: visible;
+}
+
+.backgroundKalorien {
+    visibility: hidden;
 }
 
 .kalorienberechnen {
@@ -426,6 +434,21 @@ button {
     line-height: 140%;
 }
 
+/*.backgroundWasser {
+    visibility: hidden;
+}
+
+.backgroundWasser:hover{
+    visibility: visible!important;
+}
+
+.backgroundKalorien {
+    visibility: hidden;
+}
+
+.backgroundKalorien:hover {
+    visibility: visible!important;
+}*/
 
 /* .wasserrechner */
 
@@ -442,19 +465,21 @@ button {
     align-items: center;
     align-content: center;
     margin-right: 230px;
+    background-image: none;
 }
+
 
 .icon2 {
     background-color: #7eabd878;
     border-radius: 50%;
-    width: 171%;
-    height: 171%;
+    width: 50%;
+    height: 50%;
 }
 
 .icon2:hover {
     background-color: #7eabd8be;
-    width: 171%;
-    height: 171%;
+    width: 50%;
+    height: 50%;
     transition: ease-in-out 1s;
 }
 

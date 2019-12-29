@@ -1,6 +1,6 @@
  
  function mouseOver1() {
-  document.body.style.backgroundImage = "url('assets/home_calorie.svg')"; 
+  document.body.style.backgroundImage = "url('assets/home_calorie.png')"; 
   }
   
   function mouseOut1() {
@@ -8,7 +8,7 @@
   }
   
   function mouseOver2() {
-    document.body.style.backgroundImage = "url('assets/home_water.svg')"; 
+    document.body.style.backgroundImage = "url('assets/home_water.png')"; 
   }
 
   function mouseOut2() {
