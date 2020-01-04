@@ -33,46 +33,50 @@
     </div>
 
     <div id="kalorienrechnerbody">
-            <img src="assets/home_calorie_kalorienrechner.svg" alt="hintergrundbild apfel">
+        <img src="assets/home_calorie.png" alt="hintergrundbild apfel">
     </div>
+
+    <div id="activityImg">
+        <img id="person" src="assets/liegend_male.png" style="width: 30%;">
+    </div>   
 
     <div>
 
         <form id="formular">
             <div id="werte">
-            <div id="geschlecht">
-                <p>Geschlecht</p>
-                <fieldset id="geschlechterauswahl">
-                    <input type="radio" id="m" name="geschlecht" value="male" checked>
-                    <label for="mc">Männlich</label>
-                    <input type="radio" id="w" name="geschlecht" value="Weiblich">
-                    <label for="vi">Weiblich</label>
-                </fieldset>
-            </div>
+                <div id="geschlecht">
+                    <p>Geschlecht</p>
+                    <fieldset id="geschlechterauswahl">
+                        <input type="radio" id="m" name="geschlecht" value="male" checked>
+                        <label for="mc">Männlich</label>
+                        <input type="radio" id="w" name="geschlecht" value="female">
+                        <label for="vi">Weiblich</label>
+                    </fieldset>
+                </div>
 
-            
-            <div id="angaben">
-                <p>Gewicht in Kilo</p>
-                <input name="gewicht" id="gewicht" type="number" min="35" max="400" maxlength="3" pattern="[0-9]"
-                    required>
-                <!-- <input name="gewicht" id="gewicht" min="20" max="400" step="1" maxlength="3" pattern="[0-9]" required > -->
-                <p>Alter</p>
-                <input name="alter" id="alter" type="number" min="0" max="100" maxlength="3" step="1" required>
-                <p>Größe in cm</p>
-                <input name="groesse" id="groesse" type="number" min="0" max="250" maxlength="3" step="1" required>
-            </div>
 
-            <div id="aktivitaet">
-                <p>Aktivitätslevel</p>
-                <select id="aktivitaetslevel">
-                    <option value="liegend">vorwiegend liegend, z.B. Bett</option>
-                    <option value="sitzend">vorwiegend sitzend, z.B. Bürojob</option>
-                    <option value="stehend">sitzend/ stehend, z.B. Barkeeper</option>
-                    <option value="gehend">stehen/ gehend, z.B. Hostess</option>
-                    <option value="aktiv">sehr aktiv, z.B. Sportler</option>
-                </select>
+                <div id="angaben">
+                    <p>Gewicht in Kilo</p>
+                    <input name="gewicht" id="gewicht" type="number" min="35" max="400" maxlength="3" pattern="[0-9]"
+                        required>
+                    <!-- <input name="gewicht" id="gewicht" min="20" max="400" step="1" maxlength="3" pattern="[0-9]" required > -->
+                    <p>Alter</p>
+                    <input name="alter" id="alter" type="number" min="0" max="100" maxlength="3" step="1" required>
+                    <p>Größe in cm</p>
+                    <input name="groesse" id="groesse" type="number" min="0" max="250" maxlength="3" step="1" required>
+                </div>
+
+                <div id="aktivitaet">
+                    <p>Aktivitätslevel</p>
+                    <select id="aktivitaetslevel">
+                        <option value="liegend">vorwiegend liegend, z.B. Bett</option>
+                        <option value="sitzend">vorwiegend sitzend, z.B. Bürojob</option>
+                        <option value="stehend">sitzend/ stehend, z.B. Barkeeper</option>
+                        <option value="gehend">stehen/ gehend, z.B. Hostess</option>
+                        <option value="aktiv">sehr aktiv, z.B. Sportler</option>
+                    </select>
+                </div>
             </div>
-        </div>
 
             <!-- <div id="ziel">
                <p>Ziel</p>
@@ -94,17 +98,18 @@
                 <p>Grundumsatz:</p>
                 <!-- <input name="gewicht" id="gewicht" min="20" max="400" step="1" maxlength="3" pattern="[0-9]" required > -->
                 <div class="ergebnisfeld">
-                <p id="grundumsatz"></p>
-                <!-- <input type="number" name="ergebnis" id="ergebnis" min="0" max="1000" maxlength="5"> -->
+                    <p id="grundumsatz"></p>
+                    <!-- <input type="number" name="ergebnis" id="ergebnis" min="0" max="1000" maxlength="5"> -->
                 </div>
                 <p>Leistungsumsatz:</p>
                 <div class="ergebnisfeld">
-                <p id="leistungsumsatz"></p>
+                    <p id="leistungsumsatz"></p>
                 </div>
             </div>
 
         </form>
     </div>
+    <script src="scripts/handleImage.js"></script>
     <script src="scripts/resetValues.js"></script>
     <script src="scripts/getPal.js"></script>
     <script src="scripts/checkInput.js"></script>

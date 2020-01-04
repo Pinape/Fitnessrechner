@@ -19,7 +19,6 @@ body {
 
 h1 {
     text-transform: uppercase;
-    ;
     letter-spacing: 3px;
     color: darkblue;
     font-weight: 900;
@@ -88,9 +87,12 @@ a {
     height: 100%;
     background-color: #edad8c80;
     border-radius: 50%;
+    transition-duration: 300ms;
+
 }
 
 .calories:hover {
+    transition-duration: 300ms;
     background-color: #edac8cc0;
     box-shadow: 5px 1px 200px #edac8cc0;
 }
@@ -101,9 +103,11 @@ a {
     height: 100%;
     background-color: #7eabd878;
     border-radius: 50%;
+    transition-duration: 300ms;
 }
 
 .drops:hover {
+    transition-duration: 300ms;
     background-color: #7eabd8be;
     box-shadow: 5px 1px 200px #7eabd8be;
 }
@@ -112,9 +116,11 @@ a {
     padding: 13%;
     background-color: rgba(185, 185, 185, 0.418);
     border-radius: 50%;
+    transition-duration: 300ms;
 }
 
 .home:hover {
+    transition-duration: 300ms;
     background-color: rgba(185, 185, 185, 0.418);
     box-shadow: 5px 1px 200px rgba(197, 197, 197, 0.726);
 }
@@ -126,6 +132,15 @@ a {
     position: absolute;
     margin-top: 30%;  
     width: 30%;
+    transition-duration: 300ms;
+}
+
+
+#activityImg img {
+    position: absolute; 
+    width: 30%;
+    transition-duration: 300ms;
+
 }
 
 label {
@@ -246,9 +261,11 @@ select {
     text-align: center;
     margin-top: 4%;
     margin-left: 5%;
+    transition-duration: 300ms;
 }
 
 #berechnen:hover {
+    transition-duration: 300ms;
     background-color: #b0cae7;
     color: rgb(21, 58, 99);
     cursor: pointer;
@@ -262,9 +279,11 @@ select {
     padding: 2% 5%;
     margin-top: 2%;
     text-align: center;
+    transition-duration: 300ms;
 }
 
 #zuruecksetzen:hover {
+    transition-duration: 300ms;
     background-color: #e4e4e4;
     color: #656565;
     cursor: pointer;
@@ -410,13 +429,14 @@ button {
     width: 150%;
     margin-right: 7%;
     height: 150%;
+    transition-duration: 300ms;
 }
 
 .icon1:hover {
+    transition-duration: 300ms;
     background-color: #edac8cc0;
     width: 150%;
     height: 150%;
-    transition: ease-in-out 1s;
 }
 
 
@@ -477,13 +497,14 @@ button {
     border-radius: 50%;
     width: 163%;
     height: 163%;
+    transition-duration: 300ms;
 }
 
 .icon2:hover {
+    transition-duration: 300ms;
     background-color: #7eabd8be;
     width: 163%;
     height: 163%;
-    transition: ease-in-out 1s;
 }
 
 .wasserberechnen {
@@ -556,3 +577,7 @@ button {
         width: 65%;
     }
 }
+
+
+
+

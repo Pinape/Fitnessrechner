@@ -25,6 +25,8 @@ sel.addEventListener("input", function () {
     const age = document.getElementById("alter").value
     const height = document.getElementById("groesse").value
 
+    handleImage(activity, gender)
+
     let result = {}
     try {
         result = harris(weight, height, age, pal, gender)
