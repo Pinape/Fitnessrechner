@@ -130,7 +130,7 @@ a {
 
 #kalorienrechnerbody img {
     position: absolute;
-    margin-top: 30%;  
+    margin-top: 25%;  
     width: 30%;
     transition-duration: 300ms;
 }
@@ -139,9 +139,9 @@ a {
 #activityImg img {
     position: absolute; 
     width: 30%;
+    right: 0;
     transition-duration: 300ms;
-
-}
+    }
 
 label {
     text-transform: lowercase;
@@ -404,7 +404,7 @@ button {
 
 #homeheader {
     margin-top: 0;
-    padding-top: 8%;
+    padding-top: 5%;
 }
 
 .rechnerauswahl {
@@ -448,30 +448,33 @@ button {
     line-height: 140%;
 }
 
-/*
-.icon1:hover .backgroundKalorien {
-    visibility: visible;
+
+#Kalorienrechnerhintergrundbild { 
+    display: none;
+    transition: opacity 2s linear;
+    position: absolute;
+    left: 0;
+    margin-top: 15%; 
+    width: 30%;
+    height: auto;
+    z-index: -2;
 }
 
-.backgroundKalorien {
-    visibility: hidden;
+
+#Wasserrechnerhintergrundbild { 
+    display: none;
+    transition: opacity 2s linear;
+    position: absolute;
+    right: 0;
+    margin-top: 14%; 
+    margin-right: 5%;
+    width: 32%;
+    height: auto;
+    z-index: -2;
+    transform: scaleX(-1);
 }
 
-.backgroundWasser {
-    visibility: hidden;
-}
 
-.backgroundWasser:hover{
-    visibility: visible!important;
-}
-
-.backgroundKalorien {
-    visibility: hidden;
-}
-
-.backgroundKalorien:hover {
-    visibility: visible!important;
-}*/
 
 /* .wasserrechner */
 

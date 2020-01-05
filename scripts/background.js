@@ -1,6 +1,7 @@
 
-function mouseOver1() {
+/* function mouseOver1() {
   document.body.style.backgroundImage = "url('assets/home_calorie.png')";
+  document.body.style.backgroundRepeat = 'no-repeat';
 }
 
 function mouseOut1() {
@@ -8,10 +9,29 @@ function mouseOut1() {
 }
 
 function mouseOver2() {
-  document.body.style.backgroundImage = "url('assets/home_water.png')";
+  document.body.style.backgroundImage = "url('assets/home_water_10.png')";
+  document.body.style.backgroundRepeat = 'no-repeat';
 }
 
 function mouseOut2() {
   document.body.style.backgroundImage = "none";
+} */
+
+document.getElementById("Kalorienrechnerhintergrund").onmouseover = function() {
+  document.getElementById("Kalorienrechnerhintergrundbild").style.display = "block";
 }
 
+document.getElementById("Kalorienrechnerhintergrund").onmouseout = function() {
+  document.getElementById("Kalorienrechnerhintergrundbild").style.display = "none";
+}
+
+
+
+
+document.getElementById("Wasserrechnerhintergrund").onmouseover = function() {
+  document.getElementById("Wasserrechnerhintergrundbild").style.display = "block";
+}
+
+document.getElementById("Wasserrechnerhintergrund").onmouseout = function() {
+  document.getElementById("Wasserrechnerhintergrundbild").style.display = "none";
+}
