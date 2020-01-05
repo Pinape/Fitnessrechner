@@ -11,9 +11,10 @@ function waterformular(weight, age) {
         result = Math.round(weight * 30)
     }
 
-    return {
-        wasserbedarf: result
-    }
+    return result
+    // return {
+    //     wasserbedarf: result
+    // }
 }
 
 
