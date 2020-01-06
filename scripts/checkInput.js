@@ -9,15 +9,15 @@ function checkInput(weight,height,age) {
     }
     if (weight < 35 || weight > 999) {
         wrongInput = true
-        throw "Sie müssen mindestens 35kg wiegen, um den Rechner zu nutzen"
+        throw "Bitte geben Sie ein Gewicht zwischen 35kg und 999kg ein"
     }
     if (age < 16 || age > 99) {
         wrongInput = true
-        throw "Sie müssen zwischen 16 und 100 Jahre alt sein, um den Rechner zu nutzen"
+        throw "Bitte geben Sie ein Alter zwischen 16 und 99 Jahren ein"
     }
     if (height < 140 || height > 300) {
         wrongInput = true
-        throw "Sie müssen mindestens 140cm groß sein, um den Rechner zu nutzen"
+        throw "Bitte geben Sie eine Größe zwischen 140cm und 300cm ein"
     }
 
     else {
