@@ -1,13 +1,13 @@
 jest.mock('./scripts/waterformular.js')
 
-describe("App", () => {
+describe("gui", () => {
     it("should forward result of add from input to output", () => {
         document.body.innerHTML =
-            `<div>
-        <input id="alter" />
-        <input id="gewicht" />
-        <div id="wasserbedarf" />
-    </div>`;
+        `<div>
+            <input id="alter" />
+            <input id="gewicht" />
+            <div id="wasserbedarf" />
+        </div>`;
 
         require('./app.js')
 
@@ -17,24 +17,25 @@ describe("App", () => {
 
         //Eigenes Event 
         const keyUp = new Event("keyup")
-        const alter = document.getElementById("alter")
-        const gewicht = document.getElementById("gewicht")
+        const age = document.getElementById("alter")
+        const weight = document.getElementById("gewicht")
 
 
-        alter.value = "35"
-        gewicht.value = "70"
+        age.value = 35
+        weight.value = 70
 
-        gewicht.dispatchEvent(keyUp)
+        weight.dispatchEvent(keyUp)
 
+        console.log(waterformular(70, 35))
 
 
         //Überprüfen ob Fkt aufgerufen wird
         // expect(fetchCurrentUser).toBeCalledWith(alter.value, gewicht.value);
 
-        expect(document.getElementById("wasserbedarf").value).toEqual(waterformular(gewicht,alter))
+        expect(document.getElementById("wasserbedarf").value).toEqual(waterformular(weight.value,age.value))
         console.log(document.getElementById("wasserbedarf").value)
-        const chund = waterformular(70, 35)
-        console.log(chund)
+        console.log(weight.value)
+        // console.log(chund)
 
     })
 })

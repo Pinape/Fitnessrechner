@@ -1,11 +1,11 @@
 const waterformular = require ('./scripts/waterformular.js').waterformular
 
-const alter = document.getElementById("alter")
-const gewicht = document.getElementById("gewicht")
+const age = document.getElementById("alter")
+const weight = document.getElementById("gewicht")
 
 
-gewicht.addEventListener("keyup", () => {
-    wasserbedarf.innerHTML = waterformular(alter.value, gewicht.value)
+weight.addEventListener("keyup", () => {
+    wasserbedarf.innerHTML = waterformular(age.value, weight.value)
 })
 
 
