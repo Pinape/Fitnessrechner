@@ -13,7 +13,7 @@ function checkInputWater (weight, age) {
     }
     if (age < 16 || age > 99) {
         wrongInput = true
-        throw "Sie müssen mindestens 16 Jahre alt sein, um den Rechner zu nutzen"
+        throw "Sie müssen zwischen 16 und 100 Jahre alt sein, um den Rechner zu nutzen"
     }
 
     else {

@@ -13,7 +13,7 @@ function checkInput(weight,height,age) {
     }
     if (age < 16 || age > 99) {
         wrongInput = true
-        throw "Sie müssen mindestens 16 Jahre alt sein, um den Rechner zu nutzen"
+        throw "Sie müssen zwischen 16 und 100 Jahre alt sein, um den Rechner zu nutzen"
     }
     if (height < 140 || height > 300) {
         wrongInput = true

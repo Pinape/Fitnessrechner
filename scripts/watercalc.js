@@ -44,7 +44,7 @@ sel.addEventListener("input", function () {
 
     if (wrongInput == false) {
         printError("")
-        document.getElementById("wasserbedarf").innerHTML = result.wasserbedarf + " ml pro Tag"
+        document.getElementById("wasserbedarf").innerHTML = result + " ml pro Tag"
     }
 
 })

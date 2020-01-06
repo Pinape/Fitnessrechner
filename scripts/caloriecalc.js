@@ -40,6 +40,5 @@ sel.addEventListener("input", function () {
         document.getElementById("leistungsumsatz").innerHTML = result.leistungsumsatz + " kcal"
     }
 
-
 })
 
