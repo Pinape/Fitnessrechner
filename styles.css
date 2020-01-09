@@ -439,8 +439,6 @@ button {
     height: 150%;
 }
 
-
-
 .kalorienberechnen {
     padding: 5%;
     margin-top: 10%;
@@ -450,6 +448,7 @@ button {
 
 
 #Kalorienrechnerhintergrundbild { 
+    opacity: 0;
     transition: opacity 300ms linear;
     position: absolute;
     left: 0;
@@ -461,6 +460,7 @@ button {
 
 
 #Wasserrechnerhintergrundbild { 
+    opacity: 0;
     transition: opacity 300ms linear;
     position: absolute;
     right: 0;
