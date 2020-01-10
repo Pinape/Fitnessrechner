@@ -412,7 +412,7 @@ button {
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    margin-top: 5%;
+    margin: 5% 10% 0 10%;
 }
 
 .kalorienrechner {
@@ -420,7 +420,7 @@ button {
     flex-direction: column;
     align-items: center;
     align-content: center;
-    margin-left: 230px;
+    /* margin-left: 230px; */
 }
 
 .icon1 {
@@ -472,7 +472,11 @@ button {
     transform: scaleX(-1);
 }
 
-
+@media only screen and (max-width: 977px) {
+    .rechnerauswahl {
+        margin: 5% 0 0 0;
+    }
+}
 
 /* .wasserrechner */
 
@@ -488,7 +492,7 @@ button {
     flex-direction: column;
     align-items: center;
     align-content: center;
-    margin-right: 230px;
+    /*margin-right: 230px; */
     background-image: none;
 }
 
@@ -510,7 +514,7 @@ button {
 
 .wasserberechnen {
     padding: 5%;
-    margin-top: 10%;
+    margin-top: 14%;
     align-items: center;
     line-height: 140%;
 }
@@ -536,7 +540,7 @@ button {
 
 /*---- Media Queries Home -----*/
 
-@media only screen and (max-width: 475px) {
+@media only screen and (max-width: 700px) {
     .rechnerauswahl {
         flex-direction: column;
     }
