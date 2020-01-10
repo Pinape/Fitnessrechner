@@ -343,14 +343,7 @@ button {
     }
 }
 
-@media only screen and (max-width: 786px) {
-    #alter,
-    #groesse,
-    #gewicht,
-    #ergebnis {
-        width: 40%;
-    }
-}
+
 
 @media only screen and (max-width: 425px) {
     #alter,
