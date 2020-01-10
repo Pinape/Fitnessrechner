@@ -57,7 +57,7 @@ a {
     margin: 2% 4%;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 781px) {
     .navigation {
         position: relative;
         margin: 5% 37.75%;
@@ -65,7 +65,7 @@ a {
     }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 781px) {
     #iconHome,
     #iconKalorien,
     #iconDrops {
@@ -75,7 +75,7 @@ a {
     }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 781px) {
     #iconHome {
         padding-right: 5%;
     }
@@ -480,11 +480,35 @@ button {
 
 /* .wasserrechner */
 
-#wasserrechnerbody  img{
+#wasserrechnerbody img{
     position: absolute;  
     margin-left: 55%;
     width: 40%;
-    margin-top: 15%;
+    margin-top: 10%;
+}
+
+@media only screen and (max-width: 925px) {
+    #wasserrechnerbody img {
+        margin-left: 56%;
+        width: 40%;
+        margin-top: 19%;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    #wasserrechnerbody img {
+        margin-left: 60%;
+        width: 40%;
+        margin-top: 50%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #wasserrechnerbody img {
+        margin-left: 62%;
+        width: 40%;
+        margin-top: 70%;
+    }
 }
 
 .wasserrechner {
