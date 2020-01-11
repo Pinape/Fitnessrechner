@@ -135,6 +135,11 @@ a {
     transition-duration: 300ms;
 }
 
+@media (hover: none) and (pointer: coarse) {
+    #kalorienrechnerbody img {
+    display: none; 
+    }
+}
 
 #activityImg img {
     position: absolute; 
@@ -142,6 +147,12 @@ a {
     right: 0;
     transition-duration: 300ms;
     }
+
+@media (hover: none) and (pointer: coarse) {
+    #activityImg img {
+    display: none; 
+    }
+}
 
 label {
     text-transform: lowercase;
@@ -451,6 +462,12 @@ button {
     z-index: -2;
 }
 
+@media (hover: none) and (pointer: coarse) {
+    #Kalorienrechnerhintergrundbild {
+    display: none; 
+    }
+}
+
 
 #Wasserrechnerhintergrundbild { 
     opacity: 0;
@@ -463,6 +480,12 @@ button {
     height: auto;
     z-index: -2;
     transform: scaleX(-1);
+}
+
+@media (hover: none) and (pointer: coarse) {
+    #Wasserrechnerhintergrundbild {
+    display: none; 
+    }
 }
 
 @media only screen and (max-width: 977px) {
