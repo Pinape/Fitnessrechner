@@ -1,6 +1,7 @@
+/* istanbul ignore file */
 function printError(warning) {
-    this.warning = warning;
-    this.name = "Error";
+    // this.warning = warning;
+    // this.name = "Error";
     document.getElementById("fehler").innerHTML = warning;
 }
 
