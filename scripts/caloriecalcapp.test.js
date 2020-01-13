@@ -3,7 +3,7 @@ jest.mock('./harris')
 describe("gui", () => {
     it("should forward result of harris from input to output", () => {
         document.body.innerHTML =
-        `<div>
+            `<div>
             <input id="geschlecht" />
             <input id="alter" />
             <input id="groesse" />
@@ -39,8 +39,7 @@ describe("gui", () => {
 
 
         // Überprüfen ob Fkt aufgerufen wird
-       // expect(harris.mock.calls[0][0][0][0][1]).toEqual(gender.value)
-       
+
         expect(harris.mock.calls[0][0]).toEqual(weight.value)
 
         expect(harris.mock.calls[0][1]).toEqual(height.value)
@@ -51,11 +50,16 @@ describe("gui", () => {
 
         expect(harris.mock.calls[0][4]).toEqual(gender.value)
 
-        expect(document.getElementById("grundumsatz").innerHTML).toEqual(String(harris(weight.value,height.value,age.value,pal.value,gender.value)))
 
-        //expect(document.getElementById("leistungsumsatz")).toEqual(String(harris(weight.value,height.value,age.value,pal.value,gender.value)))
+        console.log(document.getElementById("leistungsumsatz"))
+        console.log(harris(weight.value, height.value, age.value, pal.value, gender.value))
 
-        console.log(harris(weight.value,height.value,age.value,pal.value,gender.value))
+    
+        expect(document.getElementById("grundumsatz").innerHTML).toEqual(String(harris(weight.value, height.value, age.value, pal.value, gender.value)))
+
+        // expect(document.getElementById("leistungsumsatz").innerHTML).toEqual(String(harris(weight.value, height.value, age.value, pal.value, gender.value)))
+
+       
 
     })
 })

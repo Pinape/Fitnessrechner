@@ -1,5 +1,5 @@
-const harris = require ('./harris').harris
-const getPal = require ('./getPal').getPal
+const harris = require('./harris').harris
+const getPal = require('./getPal').getPal
 
 const gender = document.getElementById("geschlecht")
 const age = document.getElementById("alter")
@@ -11,16 +11,9 @@ const grundumsatz = document.getElementById("grundumsatz")
 const leistungsumsatz = document.getElementById("leistungsumsatz")
 
 pal.addEventListener("keyup", () => {
-    grundumsatz.innerHTML = harris(weight.value,height.value,age.value,pal.value,gender.value)
+    grundumsatz.innerHTML = harris(weight.value, height.value, age.value, pal.value, gender.value)
+    leistungsumsatz.innerHTML = harris(weight.value, height.value, age.value, pal.value, gender.value)
 
-    
     console.log(leistungsumsatz.innerHTML)
-    console.log(harris(weight.value,height.value,age.value,pal.value,gender.value))
-
 })
 
-// pal.addEventListener("keyup", () => {
-//     leistungsumsatz.innerHTML = harris(weight.value,height.value,age.value,pal.value,gender.value)
-
-    
-// })
