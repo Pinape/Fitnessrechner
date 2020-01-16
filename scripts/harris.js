@@ -1,3 +1,6 @@
+const checkInput = require("./checkInput").checkInput
+const getPal = require("./getPal").getPal
+
 function harris(weight, height, age, pal, gender) {
     let result
     let palresult

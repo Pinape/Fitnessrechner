@@ -1,3 +1,5 @@
+const checkInputWater = require("./checkInputWater").checkInputWater
+
 function waterformular(weight, age) {
 
     let result
@@ -11,10 +13,10 @@ function waterformular(weight, age) {
         result = Math.round(weight * 30)
     }
 
-    return result
-    // return {
-    //     wasserbedarf: result
-    // }
+    //return result
+    return {
+        wasserbedarf: result
+    }
 }
 
 

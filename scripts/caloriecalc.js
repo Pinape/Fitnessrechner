@@ -1,3 +1,6 @@
+const printError = require("./printError").printError
+const harris = require("./harris").harris
+
 window.onload = () => {
 
 }
@@ -11,7 +14,6 @@ window.onload = () => {
 
 let sel = document.getElementById("werte")
 sel.addEventListener("input", function () {
-
 
     const activity = document.getElementById("aktivitaetslevel")
     const i = activity.selectedIndex
@@ -34,11 +36,13 @@ sel.addEventListener("input", function () {
         printError(err)
     }
 
-    if (wrongInput == false) {
-        printError("")
-        document.getElementById("grundumsatz").innerHTML = result.grundumsatz + " kcal"
-        document.getElementById("leistungsumsatz").innerHTML = result.leistungsumsatz + " kcal"
-    }
 
+    let grundumsatz = result.grundumsatz
+    let leistungsumsatz = result.leistungsumsatz
+    if (grundumsatz != undefined) {
+        printError("")
+        document.getElementById("grundumsatz").innerHTML = grundumsatz + " kcal"
+        document.getElementById("leistungsumsatz").innerHTML = leistungsumsatz + " kcal"
+    }
 })
 

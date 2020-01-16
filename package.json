@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "tdd": "jest --watch",
-    "start": "ws"
+    "start": "ws",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",

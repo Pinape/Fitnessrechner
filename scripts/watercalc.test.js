@@ -20,7 +20,7 @@ describe('calculator', () => {
 
 
   it('should print out a default value', () => {
-    expect(waterformular(defaultWeight, defaultAge)).toEqual(2975)
+    expect(waterformular(defaultWeight, defaultAge).wasserbedarf).toEqual(2975)
   })
 
   

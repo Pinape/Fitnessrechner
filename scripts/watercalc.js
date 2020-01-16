@@ -1,3 +1,6 @@
+const printError = require("./printError").printError
+const waterformular = require("./waterformular").waterformular
+
 window.onload = () => {
 }
 
@@ -42,9 +45,12 @@ sel.addEventListener("input", function () {
         
     } */
 
-    if (wrongInput == false) {
-        printError("")
-        document.getElementById("wasserbedarf").innerHTML = result + " ml pro Tag"
+
+    let wasserbedarf = result.wasserbedarf
+    console.log(wasserbedarf)
+    if (wasserbedarf != undefined) {
+        printError("")        
+        document.getElementById("wasserbedarf").innerHTML = wasserbedarf + " ml pro Tag"
     }
 
 })

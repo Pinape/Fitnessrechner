@@ -1,4 +1,3 @@
-/* istanbul ignore file */
 function printError(warning) {
     // this.warning = warning;
     // this.name = "Error";
