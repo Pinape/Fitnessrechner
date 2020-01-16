@@ -13,7 +13,5 @@ const leistungsumsatz = document.getElementById("leistungsumsatz")
 pal.addEventListener("keyup", () => {
     grundumsatz.innerHTML = harris(weight.value, height.value, age.value, pal.value, gender.value)
     leistungsumsatz.innerHTML = harris(weight.value, height.value, age.value, pal.value, gender.value)
-
-    console.log(leistungsumsatz.innerHTML)
 })
 

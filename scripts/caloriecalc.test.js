@@ -1,9 +1,6 @@
 const harris = require('./harris.js').harris
-
 const checkInput = require('./checkInput.js').checkInput
-
 const printError = require('./printError.js').printError
-
 const getpal = require('./getPal').getPal
 
 describe('calculator', () => {
@@ -12,7 +9,7 @@ describe('calculator', () => {
   const defaultWeight = 85
   const defaultSize = 180
   const defaultAge = 35
-  
+
   const underAge = 15
   const overAge = 150
   const smallSize = 135
@@ -40,11 +37,11 @@ describe('calculator', () => {
   })
 
 
-  
+
   it('should throw an error if not all values are entered', () => {
     expect(() => {
-      harris(defaultWeight,"","",pal,male)
-    }).toThrow()  
+      harris(defaultWeight, "", "", pal, male)
+    }).toThrow()
   })
 
 

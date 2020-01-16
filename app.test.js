@@ -12,6 +12,7 @@ describe("gui", () => {
         require('./app.js')
 
         const waterformular = require('./scripts/waterformular').waterformular;
+
         //     Überschreibt Funktion
         waterformular.mockReturnValue(42)
 
@@ -19,7 +20,6 @@ describe("gui", () => {
         const keyUp = new Event("keyup")
         const age = document.getElementById("alter")
         const weight = document.getElementById("gewicht")
-
 
         age.value = 35
         weight.value = 70
@@ -31,6 +31,7 @@ describe("gui", () => {
        
         expect(waterformular.mock.calls[0][1]).toEqual(weight.value)
 
+        
         expect(document.getElementById("wasserbedarf").innerHTML).toEqual(String(waterformular(weight.value,age.value)))
 
     })

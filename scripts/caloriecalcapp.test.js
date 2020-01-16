@@ -16,11 +16,15 @@ describe("gui", () => {
         require('./caloriecalcapp')
 
         const harris = require('./harris').harris;
+
+
         //     Überschreibt Funktion
         harris.mockReturnValue(42)
 
+
         //     Eigenes Event 
         const keyUp = new Event("keyup")
+
 
         const gender = document.getElementById("geschlecht")
         const height = document.getElementById("groesse")
@@ -51,15 +55,8 @@ describe("gui", () => {
         expect(harris.mock.calls[0][4]).toEqual(gender.value)
 
 
-        console.log(document.getElementById("leistungsumsatz"))
-        console.log(harris(weight.value, height.value, age.value, pal.value, gender.value))
 
-    
         expect(document.getElementById("grundumsatz").innerHTML).toEqual(String(harris(weight.value, height.value, age.value, pal.value, gender.value)))
-
-        // expect(document.getElementById("leistungsumsatz").innerHTML).toEqual(String(harris(weight.value, height.value, age.value, pal.value, gender.value)))
-
-       
 
     })
 })

@@ -11,9 +11,6 @@ function getPal(palString) {
     return pal
 }
 
-
-
-
 if (module) {
     module.exports = {
         getPal

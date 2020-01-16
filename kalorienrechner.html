@@ -37,8 +37,8 @@
     </div>
 
     <div id="activityImg">
-        <img id="person" src="assets/liegend_male.png" >
-    </div>   
+        <img id="person" src="assets/liegend_male.png">
+    </div>
 
     <div>
 
@@ -63,7 +63,6 @@
                     <p>Gewicht in Kilo</p>
                     <input name="gewicht" id="gewicht" type="number" min="35" max="400" maxlength="3" pattern="[0-9]"
                         required>
-                    <!-- <input name="gewicht" id="gewicht" min="20" max="400" step="1" maxlength="3" pattern="[0-9]" required > -->
                 </div>
 
                 <div id="aktivitaet">
@@ -78,28 +77,16 @@
                 </div>
             </div>
 
-            <!-- <div id="ziel">
-               <p>Ziel</p>
-               <select id="zieloptionen">
-                   <option>Abnehmen</option>
-                   <option>Gewicht halten</option>
-                   <option>Zunehmen</option>
-               </select>
-           </div> -->
-
             <p id="fehler"></p>
 
             <div id="buttons">
                 <button id="zuruecksetzen" type="reset">Eingaben zurücksetzen</button>
-                <!-- <button id="berechnen" type="button">Berechnen</button> -->
             </div>
 
             <div id="angaben">
                 <p>Grundumsatz:</p>
-                <!-- <input name="gewicht" id="gewicht" min="20" max="400" step="1" maxlength="3" pattern="[0-9]" required > -->
                 <div class="ergebnisfeld">
                     <p id="grundumsatz"></p>
-                    <!-- <input type="number" name="ergebnis" id="ergebnis" min="0" max="1000" maxlength="5"> -->
                 </div>
                 <p>Leistungsumsatz:</p>
                 <div class="ergebnisfeld">
@@ -109,14 +96,8 @@
 
         </form>
     </div>
+
     <script src="stylescripts/handleImage.js"></script>
-    <!-- <script src="scripts/resetValues.js"></script>
-    <script src="scripts/getPal.js"></script>
-    <script src="scripts/checkInput.js"></script>
-    <script src="scripts/printError.js"></script>
-    <script src="scripts/harris.js"></script>
-    <script src="scripts/caloriecalc.js"></script>
-    <script src="scripts/inputOhneE.js"></script> -->
     <script src="dist/caloriecalc.main.js"></script>
 
 </body>

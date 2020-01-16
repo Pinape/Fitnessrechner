@@ -1,4 +1,4 @@
-function checkInput(weight,height,age) {
+function checkInput(weight, height, age) {
 
     if (!weight || !height || !age) {
         throw "Sie haben nicht alle erforderlichen Felder ausgefüllt"

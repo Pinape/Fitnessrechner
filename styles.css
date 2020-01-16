@@ -2,8 +2,6 @@ html {
     width: 100%;
     margin: 0 auto;
     font-family: "Lato", sans-serif;
-    /* background-image: url("assets/rechner.svg"); */
-
 }
 
 body {
@@ -25,49 +23,12 @@ h1 {
     font-size: 2vw;
 }
 
-@media only screen and (max-width: 1024px) {
-    h1 {
-        font-size: 4vw; 
-    }
-}
-
-@media only screen and (max-width: 781px) {
-    h1 {
-        font-size: 4.8vw; 
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    h1 {
-        font-size: 5vw;
-    }
-}
-
-
 h2 {
     text-transform: uppercase;
     font-weight: 300;
     margin: 18px 0 25px 0;
     letter-spacing: 2px;
     font-size: 1.2vw;
-}
-
-@media only screen and (max-width: 1024px) {
-    h2 {
-        font-size: 2.2vw;
-    }
-}
-
-@media only screen and (max-width: 781px) {
-    h2 {
-        font-size: 2.6vw;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    h2 {
-        font-size: 3vw;
-    }
 }
 
 p {
@@ -81,7 +42,6 @@ a {
     text-decoration: none;
     color: #313131;
 }
-
 
 #fehler {
     color: red;
@@ -97,32 +57,6 @@ a {
     margin: 2% 4%;
 }
 
-@media only screen and (max-width: 1024px) {
-    .navigation {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        margin: 5% auto;
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    #iconHome,
-    #iconKalorien,
-    #iconDrops {
-        float: left;
-        width: 10%;
-        height: 10%;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    #iconHome {
-        padding-right: 5%;
-    }
-}
-
 .calories {
     padding: 10%;
     width: 100%;
@@ -130,7 +64,6 @@ a {
     background-color: #edad8c80;
     border-radius: 50%;
     transition-duration: 300ms;
-
 }
 
 .calories:hover {
@@ -167,32 +100,25 @@ a {
     box-shadow: 5px 1px 200px rgba(197, 197, 197, 0.726);
 }
 
-
 /* ------- FITNESSRECHNER ------*/
 
 #kalorienrechnerbody img {
     position: absolute;
-    margin-top: 25%;  
+    margin-top: 25%;
     width: 30%;
     transition-duration: 300ms;
-}
-
-@media (hover: none) and (pointer: coarse) {
-    #kalorienrechnerbody img {
-    display: none; 
-    }
 }
 
 #activityImg img {
-    position: absolute; 
+    position: absolute;
     width: 30%;
     right: 0;
     transition-duration: 300ms;
-    }
+}
 
 @media (hover: none) and (pointer: coarse) {
     #activityImg img {
-    display: none; 
+        display: none;
     }
 }
 
@@ -240,10 +166,7 @@ label {
     margin-right: 2%;
 }
 
-#alter,
-#groesse,
-#gewicht,
-#ergebnis {
+#alter, #groesse, #gewicht, #ergebnis {
     margin-bottom: 2%;
     width: 20%;
     padding: 1% 3%;
@@ -261,9 +184,7 @@ input {
     text-align: center;
 }
 
-#aktivitaet,
-#ziel,
-#training {
+#aktivitaet, #ziel, #training {
     margin-bottom: 4%;
 }
 
@@ -380,103 +301,13 @@ button {
     display: flex;
 }
 
-
-/* ------- Media Queries für Fitnessrechner ------*/
-
-@media only screen and (max-width: 1024px) {
-    #formular {
-        width: 80%;
-        padding: 5%;
-    }
-}
-
-@media only screen and (max-width: 425px) {
-    select {
-        width: 85%;
-    }
-}
-
-
-
-@media only screen and (max-width: 425px) {
-    #alter,
-    #groesse,
-    #gewicht,
-    #ergebnis {
-        width: 30%;
-    }
-}
-
-@media only screen and (max-width: 350px) {
-    #berechnen,
-    #zuruecksetzen {
-        font-size: 80%;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    #buttons {
-        margin: 3%;
-    }
-}
-
-
-@media only screen and (max-width: 1167px) {
-    .ergebnisfeld {
-        width: 25%;
-    }
-}
-
-@media only screen and (max-width: 933px) {
-    .ergebnisfeld {
-        width: 30%;
-    }
-}
-
-@media only screen and (max-width: 468px) {
-    .ergebnisfeld {
-        width: 34%;
-    }
-}
-
-@media only screen and (max-width: 361px) {
-    .ergebnisfeld {
-        width: 40%;
-    }
-}
-
-
 /* ------- HOME ------*/
 
 #homeheader {
     margin-top: 0;
     padding-top: 5%;
     font-weight: 900;
-    font-size: 2.8vw; 
-}
-
-@media only screen and (max-width: 1300px) {
-    #homeheader {
-        font-size: 4vw; 
-    }
-}
-
-@media only screen and (max-width: 781px) {
-    #homeheader {
-        font-size: 4.8vw; 
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    #homeheader {
-        font-size: 5vw;
-    }
-}
-
-@media only screen and (max-width: 530px) {
-    #homeheader {
-        font-size: 7vw;
-    }
+    font-size: 2.8vw;
 }
 
 .rechnerauswahl {
@@ -492,7 +323,6 @@ button {
     flex-direction: column;
     align-items: center;
     align-content: center;
-    /* margin-left: 230px; */
 }
 
 .icon1 {
@@ -518,36 +348,23 @@ button {
     line-height: 140%;
 }
 
-@media only screen and (max-width: 700px) {
-    .kalorienberechnen {
-        margin-bottom: 30px;
-    }
-}
-
-#Kalorienrechnerhintergrundbild { 
+#Kalorienrechnerhintergrundbild {
     opacity: 0;
     transition: opacity 300ms linear;
     position: absolute;
     left: 0;
-    margin-top: 15%; 
+    margin-top: 15%;
     width: 30%;
     height: auto;
     z-index: -2;
 }
 
-@media (hover: none) and (pointer: coarse) {
-    #Kalorienrechnerhintergrundbild {
-    display: none; 
-    }
-}
-
-
-#Wasserrechnerhintergrundbild { 
+#Wasserrechnerhintergrundbild {
     opacity: 0;
     transition: opacity 300ms linear;
     position: absolute;
     right: 0;
-    margin-top: 14%; 
+    margin-top: 14%;
     margin-right: 5%;
     width: 32%;
     height: auto;
@@ -555,49 +372,11 @@ button {
     transform: scaleX(-1);
 }
 
-@media (hover: none) and (pointer: coarse) {
-    #Wasserrechnerhintergrundbild {
-    display: none; 
-    }
-}
-
-@media only screen and (max-width: 977px) {
-    .rechnerauswahl {
-        margin: 5% 0 0 0;
-    }
-}
-
-/* .wasserrechner */
-
-#wasserrechnerbody img{
-    position: absolute;  
+#wasserrechnerbody img {
+    position: absolute;
     margin-left: 55%;
     width: 40%;
     margin-top: 10%;
-}
-
-@media only screen and (max-width: 1024px) {
-    #wasserrechnerbody img {
-        margin-left: 60%;
-        width: 40%;
-        margin-top: 45%;
-    }
-}
-
-@media only screen and (max-width: 640px) {
-    #wasserrechnerbody img {
-        margin-left: 60%;
-        width: 40%;
-        margin-top: 60%;
-    }
-}
-
-@media only screen and (max-width: 380px) {
-    #wasserrechnerbody img {
-        margin-left: 60%;
-        width: 40%;
-        margin-top: 65%;
-    }
 }
 
 .wasserrechner {
@@ -605,10 +384,8 @@ button {
     flex-direction: column;
     align-items: center;
     align-content: center;
-    /*margin-right: 230px; */
     background-image: none;
 }
-
 
 .icon2 {
     background-color: #7eabd878;
@@ -650,21 +427,7 @@ button {
     display: flex;
 }
 
-
 /*---- Media Queries Home -----*/
-
-@media only screen and (max-width: 700px) {
-    .rechnerauswahl {
-        flex-direction: column;
-    }
-    .kalorienrechner {
-        margin: 0;
-    }
-    .wasserrechner {
-        margin-top: 5%;
-        margin-right: 0;
-    }
-}
 
 @media only screen and (max-width: 1547px) {
     .ergebnisfeldWasser {
@@ -672,30 +435,192 @@ button {
     }
 }
 
-@media only screen and (max-width: 1289px) {
-    .ergebnisfeldWasser  {
+@media only screen and (max-width: 1300px) {
+    #homeheader {
+        font-size: 4vw;
+    }
+    
+    .ergebnisfeldWasser {
         width: 40%;
     }
 }
 
-@media only screen and (max-width: 1105px) {
-    .ergebnisfeldWasser  {
+@media only screen and (max-width: 1024px) {
+    #wasserrechnerbody img {
+        margin-left: 60%;
         width: 40%;
+        margin-top: 45%;
     }
-}
 
-@media only screen and (max-width: 967px) {
-    .ergebnisfeldWasser  {
+    .rechnerauswahl {
+        margin: 5% 0 0 0;
+    }
+    
+    .ergebnisfeldWasser {
         width: 52%;
     }
 }
 
-@media only screen and (max-width: 371px) {
-    .ergebnisfeldWasser  {
+@media only screen and (max-width: 781px) {
+    #homeheader {
+        font-size: 4.8vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #homeheader {
+        font-size: 5vw;
+    }
+    
+    .kalorienberechnen {
+        margin-bottom: 30px;
+    }
+
+    .rechnerauswahl {
+        flex-direction: column;
+    }
+
+    .kalorienrechner {
+        margin: 0;
+    }
+
+    .wasserrechner {
+        margin-top: 5%;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    #wasserrechnerbody img {
+        margin-left: 60%;
+        width: 40%;
+        margin-top: 60%;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    #homeheader {
+        font-size: 7vw;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    #wasserrechnerbody img {
+        margin-left: 60%;
+        width: 40%;
+        margin-top: 65%;
+    }
+
+    .ergebnisfeldWasser {
         width: 65%;
     }
 }
 
+@media (hover: none) and (pointer: coarse) {
+    #Kalorienrechnerhintergrundbild {
+        display: none;
+    }
+}
 
+/* ------- Media Queries für Fitnessrechner ------*/
 
+@media only screen and (max-width: 1167px) {
+    .ergebnisfeld {
+        width: 25%;
+    }
+}
 
+@media only screen and (max-width: 1024px) {
+    #formular {
+        width: 80%;
+        padding: 5%;
+    }
+    
+    #buttons {
+        margin: 3%;
+    }
+    
+    .ergebnisfeld {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    .ergebnisfeld {
+        width: 34%;
+    }
+
+    select {
+        width: 85%;
+    }
+    
+    #alter, #groesse, #gewicht, #ergebnis {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 361px) {
+    .ergebnisfeld {
+        width: 40%;
+    }
+    
+    #berechnen, #zuruecksetzen {
+        font-size: 80%;
+    }
+}
+
+@media (hover: none) and (pointer: coarse) {
+    #kalorienrechnerbody img {
+        display: none;
+    }
+}
+
+/* General und Navigation Media Querries */
+
+@media only screen and (max-width: 1024px) {
+    h1 {
+        font-size: 4vw;
+    }
+    
+    h2 {
+        font-size: 2.2vw;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: 5% auto;
+        width: 100%;
+    }
+
+    #iconHome, #iconKalorien, #iconDrops {
+        float: left;
+        width: 10%;
+        height: 10%;
+    }
+
+    #iconHome {
+        padding-right: 5%;
+    }
+}
+
+@media only screen and (max-width: 781px) {
+    h1 {
+        font-size: 4.8vw;
+    }
+    
+    h2 {
+        font-size: 2.6vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    h1 {
+        font-size: 5vw;
+    }
+
+    h2 {
+        font-size: 3vw;
+    }
+}

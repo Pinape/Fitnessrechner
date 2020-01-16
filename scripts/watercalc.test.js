@@ -1,7 +1,5 @@
 const waterformular = require('./waterformular.js').waterformular
-
 const checkInputWater = require('./checkInputWater.js')
-
 const printError = require('./printError.js').printError
 
 
@@ -16,7 +14,7 @@ describe('calculator', () => {
   const underAge = 15
   const overAge = 150
   const underWeight = 30
-  const overWeight = 1500  
+  const overWeight = 1500
 
 
   it('should print out a default value', () => {
@@ -24,11 +22,13 @@ describe('calculator', () => {
   })
 
   
+
   it('should throw an error if not all values are entered', () => {
     expect(() => {
-      waterformular(defaultWeight,"")
-    }).toThrow()  
+      waterformular(defaultWeight, "")
+    }).toThrow()
   })
+
 
 
   it('should throw an error if the person is under 16', () => {
@@ -46,7 +46,7 @@ describe('calculator', () => {
   })
 
   it('should throw an error if the person weighs more than 999kg', () => {
-    expect(() => { waterformular(overWeight,defaultAge) }).toThrow()
+    expect(() => { waterformular(overWeight, defaultAge) }).toThrow()
   })
 
 })

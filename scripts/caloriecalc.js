@@ -4,13 +4,6 @@ const harris = require("./harris").harris
 window.onload = () => {
 
 }
-// module.exports={
-// let button = document.getElementById("berechnen")
-// button.addEventListener("click", () => {
-
-// let input = document.querySelectorAll(".input")
-// input.addEventListener("oninput", () => {
-
 
 let sel = document.getElementById("werte")
 sel.addEventListener("input", function () {

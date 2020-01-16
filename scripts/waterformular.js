@@ -3,22 +3,19 @@ const checkInputWater = require("./checkInputWater").checkInputWater
 function waterformular(weight, age) {
 
     let result
+
     if (age < 64) {
         checkInputWater(weight, age)
         result = Math.round(weight * 35)
-    }
-    
-    else {
+    } else {
         checkInputWater(weight, age)
         result = Math.round(weight * 30)
     }
 
-    //return result
     return {
         wasserbedarf: result
     }
 }
-
 
 
 if (module){
