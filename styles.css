@@ -451,7 +451,7 @@ button {
 #homeheader {
     margin-top: 0;
     padding-top: 5%;
-    font-size: 2.2vw; 
+    font-size: 3vw; 
 }
 
 @media only screen and (max-width: 1300px) {
@@ -575,23 +575,15 @@ button {
     margin-top: 10%;
 }
 
-@media only screen and (max-width: 925px) {
-    #wasserrechnerbody img {
-        margin-left: 56%;
-        width: 40%;
-        margin-top: 19%;
-    }
-}
-
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 1024px) {
     #wasserrechnerbody img {
         margin-left: 60%;
         width: 40%;
-        margin-top: 50%;
+        margin-top: 45%;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 640px) {
     #wasserrechnerbody img {
         margin-left: 60%;
         width: 40%;
