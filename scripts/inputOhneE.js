@@ -7,9 +7,9 @@ const invalidChars = [
 ];
 
 
-function disableInvalidKeys(inputBox) {
-    inputBox.addEventListener("keydown", function (e) {
-        if (invalidChars.includes(e.key)) {
+function disableInvalidKeys(inputBox) { // Deklarieren der Funktion
+    inputBox.addEventListener("keydown", function (e) { // EventListener wird hinzugefügt bei Button Press -> schaut wo es hinzugefügt wird
+        if (invalidChars.includes(e.key)) { // "includes(e.key))" übergibt die Keys, die gepresst werden und wenn invalidChars dabei ist, dann wird das Event gestoppt
             e.preventDefault();
         }
     });
