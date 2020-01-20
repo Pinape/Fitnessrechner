@@ -17,13 +17,4 @@ function waterformular(weight, age) {
     }
 }
 
-
-if (module){
-    module.exports = {
-        waterformular
-    }
-}
-
-if (window){
-    window.waterformular = waterformular
-}
+module.exports = { waterformular };

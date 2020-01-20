@@ -8,9 +8,6 @@ describe('calculator', () => {
   const defaultWeight = 85
   const defaultAge = 35
 
-  const defaultAgeYoung = 30
-  const defaultAgeOld = 70
-
   const underAge = 15
   const overAge = 150
   const underWeight = 30

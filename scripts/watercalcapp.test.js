@@ -1,4 +1,4 @@
-jest.mock('./scripts/waterformular')
+jest.mock('./waterformular')
 
 describe("gui", () => {
     it("should forward result of add from input to output", () => {
@@ -9,9 +9,9 @@ describe("gui", () => {
             <div id="wasserbedarf" />
         </div>`;
 
-        require('./app.js')
+        require('./watercalcapp.js')
 
-        const waterformular = require('./scripts/waterformular').waterformular;
+        const waterformular = require('./waterformular').waterformular;
 
         //     Überschreibt Funktion
         waterformular.mockReturnValue(42)

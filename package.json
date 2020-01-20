@@ -24,12 +24,6 @@
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
   },
-  "jest": {
-    "setupFiles": [
-      "./testHelpers/itWill.js",
-      "./testHelpers/initDom.js"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Pinape/Fitnessrechner.git"

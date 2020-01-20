@@ -23,13 +23,4 @@ function harris(weight, height, age, pal, gender) {
     }
 }
 
-
-if (module) {
-    module.exports = {
-        harris
-    }
-}
-
-if (window) {
-    window.harris = harris
-}
+module.exports = { harris };

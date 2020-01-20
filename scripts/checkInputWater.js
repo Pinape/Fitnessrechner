@@ -12,13 +12,4 @@ function checkInputWater(weight, age) {
     }
 }
 
-
-if (module) {
-    module.exports = {
-        checkInputWater
-    }
-}
-
-if (window) {
-    window.checkInputWater = checkInputWater
-}
+module.exports = { checkInputWater };

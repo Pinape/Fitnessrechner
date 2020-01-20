@@ -1,4 +1,4 @@
-const waterformular = require ('./scripts/waterformular').waterformular
+const waterformular = require ('./waterformular').waterformular
 
 
 const age = document.getElementById("alter")

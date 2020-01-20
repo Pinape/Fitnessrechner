@@ -3,4 +3,3 @@
     
     document.getElementById("person").src = image;
   }
-

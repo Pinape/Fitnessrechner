@@ -15,13 +15,5 @@ function checkInput(weight, height, age) {
 
 }
 
+module.exports = { checkInput };
 
-if (module) {
-    module.exports = {
-        checkInput
-    }
-}
-
-if (window) {
-    window.checkInput = checkInput
-}

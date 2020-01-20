@@ -40,8 +40,7 @@ describe('calculator', () => {
 
   it('should throw an error if not all values are entered', () => {
     expect(() => {
-      harris(defaultWeight, "", "", pal, male)
-    }).toThrow()
+      harris(defaultWeight, "", "", pal, male)}).toThrow()
   })
 
 
