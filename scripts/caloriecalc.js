@@ -25,6 +25,7 @@ sel.addEventListener("input", function () {
     let result = {}
     try {
         result = harris(weight, height, age, pal, gender)
+        console.log(result)
     } catch (err) {
         printError(err)
     }
