@@ -166,7 +166,7 @@ label {
     margin-right: 2%;
 }
 
-#alter, #groesse, #gewicht, #ergebnis {
+#alter, #groesse, #gewicht {
     margin-bottom: 2%;
     width: 20%;
     padding: 1% 3%;
@@ -184,7 +184,7 @@ input {
     text-align: center;
 }
 
-#aktivitaet, #ziel, #training {
+#aktivitaet {
     margin-bottom: 4%;
 }
 
@@ -226,25 +226,6 @@ select {
     border-image: initial;
 }
 
-#berechnen {
-    border-radius: 10px;
-    font-size: 15px;
-    color: white;
-    background-color: #104B88;
-    padding: 2% 5%;
-    text-align: center;
-    margin-top: 4%;
-    margin-left: 5%;
-    transition-duration: 300ms;
-}
-
-#berechnen:hover {
-    transition-duration: 300ms;
-    background-color: #b0cae7;
-    color: rgb(21, 58, 99);
-    cursor: pointer;
-}
-
 #zuruecksetzen {
     border-radius: 10px;
     font-size: 17px;
@@ -276,10 +257,6 @@ button {
     letter-spacing: 2px;
     border: none;
     font-size: 17%;
-}
-
-#ergebnis {
-    font-weight: 500;
 }
 
 .ergebnisfeld p {
