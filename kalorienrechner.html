@@ -43,7 +43,6 @@
     <div>
 
         <form id="formular">
-            <div id="werte">
                 <div id="geschlecht">
                     <p>Geschlecht</p>
                     <fieldset id="geschlechterauswahl">
@@ -57,12 +56,11 @@
 
                 <div id="angaben">
                     <p>Alter</p>
-                    <input name="alter" id="alter" type="number" min="0" max="100" maxlength="3" step="1" required>
+                    <input name="alter" id="alter" type="number" step="1" required>
                     <p>Größe in cm</p>
-                    <input name="groesse" id="groesse" type="number" min="0" max="250" maxlength="3" step="1" required>
+                    <input name="groesse" id="groesse" type="number" step="1" required>
                     <p>Gewicht in Kilo</p>
-                    <input name="gewicht" id="gewicht" type="number" min="35" max="400" maxlength="3" pattern="[0-9]"
-                        required>
+                    <input name="gewicht" id="gewicht" type="number" step="1" required>
                 </div>
 
                 <div id="aktivitaet">
@@ -75,7 +73,6 @@
                         <option value="aktiv">sehr aktiv, z.B. Sportler</option>
                     </select>
                 </div>
-            </div>
 
             <p id="fehler"></p>
 
