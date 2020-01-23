@@ -8,12 +8,13 @@ window.onload = () => {
 let sel = document.getElementById("werte")
 sel.addEventListener("input", function () {
 
+    document.getElementById("grundumsatz").innerHTML = ""
+    document.getElementById("leistungsumsatz").innerHTML = ""
+
+
     const activity = document.getElementById("aktivitaetslevel")
     const i = activity.selectedIndex
     const pal = String(activity.options[i].value)
-
-    document.getElementById("grundumsatz").innerHTML = ""
-    document.getElementById("leistungsumsatz").innerHTML = ""
 
     const gender = document.querySelector('input[name="geschlecht"]:checked').value
     const weight = document.getElementById("gewicht").value
@@ -25,7 +26,6 @@ sel.addEventListener("input", function () {
     let result = {}
     try {
         result = harris(weight, height, age, pal, gender)
-        console.log(result)
     } catch (err) {
         printError(err)
     }
