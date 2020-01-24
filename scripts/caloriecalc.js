@@ -11,7 +11,6 @@ sel.addEventListener("input", function () {
     document.getElementById("grundumsatz").innerHTML = ""
     document.getElementById("leistungsumsatz").innerHTML = ""
 
-
     const activity = document.getElementById("aktivitaetslevel")
     const i = activity.selectedIndex
     const pal = String(activity.options[i].value)

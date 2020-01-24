@@ -8,7 +8,7 @@ function checkInputWater(weight, age) {
         throw "Bitte geben Sie ein Gewicht zwischen 35kg und 999kg ein"
     }
     if (age < 16 || age > 90) {
-        throw "Bitte geben Sie ein Alter zwischen 16 und 99 Jahren ein"
+        throw "Bitte geben Sie ein Alter zwischen 16 und 90 Jahren ein"
     }
 }
 

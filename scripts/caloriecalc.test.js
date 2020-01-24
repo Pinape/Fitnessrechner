@@ -1,7 +1,4 @@
 const harris = require('./harris.js').harris
-const checkInput = require('./checkInput.js').checkInput
-const printError = require('./printError.js').printError
-const getpal = require('./getPal').getPal
 
 describe('calculator', () => {
 

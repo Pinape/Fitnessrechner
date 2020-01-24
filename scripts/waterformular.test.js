@@ -1,7 +1,4 @@
 const waterformular = require('./waterformular.js').waterformular
-const checkInputWater = require('./checkInputWater.js')
-const printError = require('./printError.js').printError
-
 
 describe('calculator', () => {
 

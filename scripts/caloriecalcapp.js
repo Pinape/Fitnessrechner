@@ -1,5 +1,4 @@
 const harris = require('./harris').harris
-const getPal = require('./getPal').getPal
 
 const gender = document.getElementById("geschlecht")
 const age = document.getElementById("alter")
